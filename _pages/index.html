@@ -1,0 +1,64 @@
+---
+layout: standard
+id: overview
+title: Overview
+nav-order: 1
+
+
+
+banner:
+  title-super: Discover
+  title: Australia
+
+
+
+intro: >
+  <p class="text--xl">Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+
+
+
+topics:
+
+  - title: posuere consectetur
+    id: luxury
+    description: Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+  - title: posuere consectetur
+    id: underwater
+    description: Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+  - title: posuere consectetur
+    id: dining
+    description: Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+---
+
+
+
+<div class="section vpad--xxl">
+
+  <div class="row row--padding text--center">
+    {{page.intro}}
+  </div>
+
+  <div class="space--xxl"></div>
+
+  <div class="row row--padding">
+    {% assign page-topics = page.topics %}
+    {% for topic in page-topics %}
+      <div class="bob">
+
+        <div class="bob__image bg-img bg-img--3-2 bg-img--rounded" style="background-image: url('{{site.baseurl}}/img/content/overview/{{topic.id}}.jpg');"></div>
+
+        <div class="bob__text">
+          <div class="line-length--lg">
+            <div class="title title--bold title--kerning title--md title--upper {% cycle 'title--grad-blue', 'title--grad-cyan', 'title--grad-green'  %}">{{topic.title}}</div>
+            <p class="text--lg">{{topic.description}}</p>
+          </div>
+        </div>
+
+      </div>
+    {% endfor %}
+  </div>
+
+</div>

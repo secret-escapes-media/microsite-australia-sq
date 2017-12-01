@@ -1,0 +1,32 @@
+// general styles for the project that wouldn't be a reuseable component
+
+.bg {
+  &--white      { background-color: $white; }
+  &--white-5    { background-color: rgba($white,.5); }
+  &--grey { background-color: $grey; }
+  &--grey-dark { background-color: $grey-dark; }
+  &--grey-darker { background-color: $grey-darker; }
+  &--grey-darkest { background-color: $grey-darkest; }
+  &--grey-light { background-color: $grey-light; }
+  &--grey-lighter { background-color: $grey-lighter; }
+  &--grey-lightest { background-color: $grey-lightest; }
+  &--fixed {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+    .touch & { background-attachment: scroll; }
+  }
+}
+
+
+
+
+.intro {
+  $page-nav-height: 50px;
+  position: relative;
+  &.has-nav {
+    padding-bottom: $page-nav-height;
+    &__content {}
+  }
+}

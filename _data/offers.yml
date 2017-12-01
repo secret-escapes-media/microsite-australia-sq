@@ -1,0 +1,42 @@
+
+## Secret Escapes offers
+## ==============================================
+
+- title: Vivanta by Taj - Coral Reef
+  id: vivanta-by-taj-coral-reef
+  featured-offer: true
+  location: North Malé Atoll, Maldives
+  description: A luxurious Taj property named one of the best in the Maldives by Condé Nast Traveller
+  description-long: World-class Taj hospitality on a pristine islet in the Maldives, with half board, speedboat transfers, a sunset cruise, couple's spa treatment and a choice of villas. Perhaps more synonymous with paradise than anywhere else in the world, this remote Indian Ocean archipelago could never fail to impress. Vivanta by Taj - Coral Reef lies beside a lazy blue lagoon in the North Malé Atoll and has been named by Condé Nast Traveller as one of the places to stay - quite the accolade, when lavish private-island resorts are what the Maldives does best.
+  description-list: >
+    <li>Bobbing on the clear waters of the Indian Ocean in a glass-bottom boat </li>
+    <li>Transferring from Malé airport by speedboat to your island idyll </li>
+    <li>The modish, natural style of the luxury beach villas </li>
+    <li>The fabulous Presidential Nirvana Beach suite is perfect for a dream getaway with friends or family </li>
+  price: 330
+  price-description: per villa per night
+  saved: 70
+  link: https://www.secretescapes.com/vivanta-by-taj-coral-reef-north-male-atoll-maldives/sale
+
+
+
+
+
+- title: Intimate Maldives escape
+  id: intimate-maldives-escape
+  location: smartline Eriyadu, North Malé Atoll
+  description: Revive yourself at a pristine Maldives island resort
+  price: 1299
+  price-description: per person for 7 nights
+  saved: 30
+  link: https://www.secretescapes.com/intimate-maldives-escape-smartline-eriyadu-north-male-atoll/sale?gce_bfpop=0&utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Maldives_Nov2017
+
+- title: Adaaran Prestige Vadoo
+  id: adaaran-prestige-vadoo
+  location: South Malé Atoll, Maldives
+  description: Over-water villas at a barefoot-luxe Maldivian paradise, with half board and speedboat transfers
+  price: 467
+  price-description: per villa per night
+  saved: 59
+  link: https://www.secretescapes.com/adaaran-prestige-vadoo-south-male-atoll-maldives/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Maldives_Nov2017
+
