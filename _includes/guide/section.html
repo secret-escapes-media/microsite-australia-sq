@@ -1,0 +1,32 @@
+
+<div class="section">
+  <div class="wp" id="section-{{section.title | slugify}}"></div>
+
+  <div class="row row--padding text--center">
+    <h3 class="title title--xl">{{section.title}}</h3>
+    <p class="text--lg line-length--lg">{{section.content}}</p>
+  </div>
+
+
+
+  {% assign pois = section.pois %}
+  {% if pois %}
+    <div class="row row--padding pois">
+
+      {% for poi in pois %}
+        {% include components/poi.html %}
+      {% endfor %} <!-- end poi -->
+    </div>
+  {% endif %}
+
+
+
+  {% if section.link %}
+  <div class="row row--padding text--center">
+    <a href="{{ section.link }}" id="tracking-btn-{{section.title|slugify}}" class="btn btn--lg btn--solid">Read more</a>
+  </div>
+  {% endif %}
+
+
+
+</div>

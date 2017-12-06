@@ -1,0 +1,34 @@
+
+## SQ Flights
+## ==============================================
+
+
+- id: ldn-mel
+  title: London to Melbourne
+  duration: 23 hours 32 minutes
+  via:
+    - title: Dubai
+
+
+- id: ldn-bne
+  title: London to Brisbane
+  duration: 23 hours 32 minutes
+  via:
+    - title: Hong Kong
+    - title: Sydney
+
+
+- id: ldn-syd
+  title: London to Sydney
+  duration: 23 hours 32 minutes
+  via:
+    - title: Hong Kong
+    - title: Sydney
+
+
+- id: ldn-adl
+  title: London to Adelaide
+  duration: 23 hours 32 minutes
+  via:
+    - title: Hong Kong
+    - title: Sydney

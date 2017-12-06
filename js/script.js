@@ -10,7 +10,7 @@ function stickNav(){
   var trigger = $('.intro.has-nav');
   var triggerH = $('.intro__content').outerHeight();
   var distance = triggerH + trigger.offset().top;
-  var nav = $('.intro__nav');
+  var nav = $('.intro__nav .page-nav');
 
   if( st > distance ){
     nav.addClass('stuck');

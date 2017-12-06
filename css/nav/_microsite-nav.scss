@@ -69,12 +69,12 @@ $nav-width-bp: 500px;
     &:last-child { border-right: 1px solid $grey-lighter; }
     @include transition;
     &.is-current {
-      color: $theme-cyan;
+      color: $theme-primary;
       &:hover { color: $white; }
     }
     &:hover {
       color: $white;
-      background-color: $theme-cyan;
+      background-color: $theme-primary;
     }
   }
   &__link {

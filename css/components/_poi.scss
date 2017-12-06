@@ -1,62 +1,53 @@
+
+
 // points of interest on the destination pages and featured across the site
 
+.pois {}
 
-.pois {
-  text-align: center;
-}
 .poi {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: $s2;
+  margin-bottom: $s4;
+
+  @include layout(12 1/4);
+  @include bp(lg){
+    @include gallery(4);
+    margin-bottom: gutter(12);
+
+    &.two-col { @include gallery(6); }
+  }
+
+  &__footer {
+    margin-top: $s1;
+  }
+
+  &__location {
+    font-size: 0.9em;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    display: block;
+    &:before {
+      content: "";
+      display: inline-block;
+      height: 1.5em; width: 1.05em;
+      margin-top: -0.1em;
+      margin-right: .3em;
+      margin-bottom: .2em;
+      vertical-align: middle;
+      background-image: url( "../img/icons/map-pin.png" );
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-size: contain;
+      .svg & { background-image: url( "../img/icons/map-pin.svg" ); }
+    }
+  }
 }
 
 .featured-poi {
-  margin-bottom: $s2;
-
-  @include layout(12 1/2);
-  @include bp(md){
-    @include gallery(6);
-    margin-bottom: gutter(12);
-  }
-  @include bp(xl){
-    @include gallery(4);
-  }
-
-  &__overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    color: $white;
-    background-color: rgba($grey-darkest,.5);
-    @include transition;
-    .title {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      z-index: $z-content;
-      padding-top: 22.25%;
-      padding-left: $s2;
-      padding-right: $s2;
-      @include transition;
-      .csstransforms.csstransforms3d & {
-        top: 50%;
-        padding-top: 0;
-        transform: translateY(-50%);
-      }
-    }
-    &:hover {
-      .title { letter-spacing: 0.175em; }
-      background-color: rgba($grey-darkest,.66);
-    }
-  }
-  &--overview {
-    font-size: .75em;
-    .title {
-      padding-left: .5em;
-      padding-right: .5em;
-    }
-  }
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: $s4;
 }

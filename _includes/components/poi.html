@@ -1,34 +1,18 @@
-<div class="col poi">
+<a href="javascript:void(0);" data-modal-id="modal-pois" data-modal-item-id="{{poi.title|slugify}}" class="js-open-modal poi{% if include.class %} {{include.class}}{% endif %}">
 
-  <div class="poi__image bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/{{poi.id}}.jpg');">
+  <div class="poi__image bg-img bg-img--3-2 bg-img--shadow bg--grey-darkest text--white">
+    <div class="bg-img__content">
+      <h4 class="title title--xs title--bolder title--kerning title--upper">{{poi.title}}</h4>
+    </div>
+
     {% if poi.image-credit %}
     <div class="bg-img__credit">
       {{poi.image-credit}}
     </div>
     {% endif %}
+
+    <div class="bg-img__bg" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/pois/{{poi.title|slugify}}.jpg');"></div>
+
   </div>
 
-  <div class="space--md"></div>
-  <h4 class="title title--xs title--02">{{poi.title}}</h4>
-
-  {% if poi.title-sub %}
-    <div class="title--01 title--xxxs title--bolder title--italic">{{poi.title-sub}}</div>
-  {% endif %}
-
-  <p class="text--small">{{poi.content}}</p>
-
-  <div class="poi__footer">
-    {% if poi.locations %}
-    {% for location in poi.locations %}
-    <span class="poi__location">
-      {{location.title}}
-    </span>
-    {% endfor %}
-    {% endif %}
-
-    {% if poi.link %}
-    <a href="{{ poi.link }}" id="tracking-poi-btn-{{poi.id}}" class="poi__btn btn btn--sm btn--white-outline">Read more</a>
-    {% endif %}
-  </div>
-
-</div>
+</a>

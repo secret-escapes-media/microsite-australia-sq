@@ -62,7 +62,7 @@ $nav-width-bp: 500px;
   }
   &__item {
     padding-top: 0 !important;
-    margin-left: 0;
+    margin-left: 0 !important;
     display: inline-block;
     white-space: nowrap;
     border-left: 1px solid $grey-lightest;

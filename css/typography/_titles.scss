@@ -19,8 +19,8 @@
   &--color { color: $headline; }
 
   & + *         { padding-top: .75em; }
+  &--super + *  { padding-top: 0 !important; }
   &--sub        { padding-top: .15em !important; }
-  &--super + *  { padding-top: .15em !important; }
   &--light      { font-weight: 300; }
   &--bold       { font-weight: 500; }
   &--bolder     { font-weight: 600; }
@@ -62,25 +62,6 @@
 
   @include bp(lg){
     &--display-size { font-size: $s11; }
-  }
-
-
-
-
-  &--grad-blue {
-    background: -webkit-linear-gradient(left, #4bb7cc, #383b8c);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  &--grad-cyan {
-    background: -webkit-linear-gradient(left, #53b6d7, #277ca1);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  &--grad-green {
-    background: -webkit-linear-gradient(left, #b7cc4b, #3b8c38);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
   }
 
 

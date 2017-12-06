@@ -1,0 +1,52 @@
+
+<div class="section bg--grey-lightest game">
+  <div class="row row--padding text--center">
+
+    <div class="game__wrap">
+      <div class="game__category">
+        <div class="row game__message">
+          <span class="title title--xs">Pick the <strong>five</strong> holiday images most irresistable to you</span>
+          <a id="track-category-submit" class="btn btn--orange btn--large js-game__category-submit">Submit</a>
+        </div>
+        <div class="row">
+          <div class="game__category-list js-game__category-list"></div>
+        </div>
+      </div>
+      <div class="game__style">
+        <div class="row game__message">
+          <div class="title title--xs">Now pick <strong>five</strong> more to reveal your perfect Australia getaway!</div>
+          <a id="track-game-result" class="btn btn--orange btn--large js-game__style-submit">Submit</a>
+        </div>
+        <div class="row">
+          <ul class="game__style-list js-game__style-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="game__result text--center">
+      <div class="row">
+        {% for result in page.game-results %}
+        <div class="result js-result-{{result.id}}">
+          <div class="row row--lg">
+            <div class="title title--upper title--bold title--kerning title--xxs">Your perfect Australia getaway is...</div>
+            <div class="title title--lg">{{result.title}}</div>
+            <p class="text--lg">{{result.content}}</p>
+          </div>
+          <div class="row row--xxl">
+            {% assign result-offer = site.data.offers | where: "id", result.offer-id %}
+            {% for offer in result-offer %}
+              {% include components/offer-lg.html %}
+            {% endfor %}
+          </div>
+          <div class="row text--center">
+            <div>
+              <a id="track-game-result-collection" href="{{site.baseurl}}/{{result.link}}" class="btn btn--orange">See More {{result.link-title}}</a><br><a id="track-game-reset" class="js-game__reset btn btn--outline-orange btn--small">Choose Again?</a>
+            </div>
+          </div>
+
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>

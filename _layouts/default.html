@@ -11,9 +11,11 @@
 
     {{ content }}
 
-    {% include page/footer.html %}
+    {% unless page.id == 'overview' %}
+      {% include page/footer.html %}
+    {% endunless %}
 
-    {% include modal/modal.html %}
+    {% include modal/modal-terms.html %}
 
   </body>
 

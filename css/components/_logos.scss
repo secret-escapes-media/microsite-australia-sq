@@ -15,8 +15,8 @@
     }
   }
   &--partner { // max-width for this is about 150x46px
-    max-width: 80px;
-    &-sm { max-width: 66px; }
+    max-width: 200px;
+    &-sm { max-width: 160px; }
     & + & { padding-left: 1em; }
   }
 }
