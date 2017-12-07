@@ -19,4 +19,8 @@
     &-sm { max-width: 160px; }
     & + & { padding-left: 1em; }
   }
+  &--singaporeairlines { // max-width for this is about 150x46px
+    max-width: 130px;
+    & + & { padding-left: 1em; }
+  }
 }

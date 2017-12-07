@@ -1,13 +1,13 @@
 // Title & headline styles
 
 .title {
-  font-family: $font-family-headline-02;
+  font-family: $font-family-headline;
   line-height: 1.2;
   color: $headline;
   .text--white & { color: white; }
 
   &--display {
-    font-family: $font-family-headline-01;
+    font-family: $font-family-display;
     line-height: 1;
   }
 
@@ -19,8 +19,8 @@
   &--color { color: $headline; }
 
   & + *         { padding-top: .75em; }
-  &--super + *  { padding-top: 0 !important; }
-  &--sub        { padding-top: .15em !important; }
+  &--super + *  { padding-top: 15px !important; }
+  &--sub        { padding-top: 15px !important; }
   &--light      { font-weight: 300; }
   &--bold       { font-weight: 500; }
   &--bolder     { font-weight: 600; }
@@ -44,6 +44,7 @@
   &--xs           { font-size: $s1; }
   &--xxs          { font-size: $s0; }
   &--xxxs         { font-size: $s-1; }
+  &--xxxxs         { font-size: $s-1; }
 
   @include bp(md){
     &--display-size { font-size: $s10; }
@@ -58,6 +59,7 @@
     &--xs           { font-size: $s3; }
     &--xxs          { font-size: $s2; }
     &--xxxs         { font-size: $s1; }
+    &--xxxxs         { font-size: $s-1; }
   }
 
   @include bp(lg){

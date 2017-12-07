@@ -70,4 +70,18 @@
   &--solid {
     background-color: $theme-primary;
   }
+  &--white {
+    background-color: $white;
+    color: $headline;
+  }
+  &--sq {
+    background-color: $sq-primary;
+    color: $headline;
+    &:hover { background-color: darken($sq-primary,5); }
+  }
+  &--tf {
+    background-color: $tf-primary;
+    color: $white;
+    &:hover { background-color: darken($tf-primary,5); }
+  }
 }

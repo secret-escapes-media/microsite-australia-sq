@@ -1,17 +1,25 @@
 
-<div class="section bg--theme-primary text--white">
+<div class="section vpad--xxl bg--theme-primary text--white">
   <div class="wp" id="section-{{section.title | slugify}}"></div>
 
+
+
   <div class="row row--padding text--center">
-    <h3 class="title title--xl">{{section.title}}</h3>
-    <p class="text--lg line-length--lg">{{section.content}}</p>
+    <h3 class="title title--xl title--display title--upper title--kerning">{{section.title}}</h3>
+    <p class="text--xl line-length--lg">{{section.content}}</p>
   </div>
 
 
-  <div class="row row--padding row--4-8-gutters">
 
-    <div class="col">
+  <div class="row row--padding row--4-8-gutters row--valign">
+
+    <div class="col text--center">
+
+      <div class="expert__img bg-img bg-img--1-1" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/expert.jpg);"></div>
+
       <h2 class="title title--md title--bold">{{page.expert.name}}</h2>
+      <span class="title title--sub title--bolder title--upper title--kerning">{{page.expert.subtitle}}</span>
+      <hr class="hr--center">
       <p class="text--lg">{{page.expert.content}}</p>
     </div>
 
@@ -36,5 +44,7 @@
     <a href="{{ section.link }}" id="tracking-btn-{{section.title|slugify}}" class="btn btn--lg btn--solid">Read more</a>
   </div>
   {% endif %}
+
+
 
 </div>

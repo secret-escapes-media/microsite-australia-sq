@@ -6,8 +6,19 @@ layout: standard
 
 <div class="intro{% if page.sections %} has-nav{% endif %}">
 
-  <div class="intro__content section row row--padding text--center">
-    <p class="text--xl">{{page.intro}}</p>
+  <div class="intro__content section row row--padding row--8-4-gutters row--valign">
+
+    <div class="col">
+      {{page.intro}}
+    </div>
+
+    <div class="col row--padding vpad--lg bg--sq-secondary text--white bg--rounded">
+      <span class="title title--display title--xxs title--bold title--kerning title--upper">Get to Australia</span>
+      <hr class="hr--left">
+      <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.</p>
+      <a href="{{site.baseurl}}/flights" class="btn btn--solid btn--sq">Flights from £XXX</a>
+    </div>
+
   </div>
 
   {% if page.sections %}
@@ -26,10 +37,16 @@ layout: standard
     {% include guide/section-favourites.html %}
   {% elsif section.layout == 'expert' %}
     {% include guide/section-expert.html %}
+  {% elsif section.layout == 'three-sixty' %}
+    {% include guide/section-360.html %}
   {% else %}
     {% include guide/section.html %}
   {% endif %}
 {% endfor %}
+
+
+
+{% include page/flights-banner.html %}
 
 
 

@@ -10,7 +10,9 @@ landing:
   title-super: Choose
   title: Australia
   intro: >
-    <p class="text--xl">Sed posuere consectetur est at lobortis. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nulla vitae elit libero, a pharetra augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+    <p class="text--xl">A country of explosive colour and unparalleled possibilities, Australia has something fresh to offer worldly city-breakers, beach-bums and adventure-junkies.</p>
+    <p class="text--lg">As one of the most diverse destinations on earth, travellers have long been seduced by the irresistible lure of Australia’s golden sands, unrivalled surf and flaming outback landscape. From its bustling modern metropolises, with world-renowned culinary offerings, to the rolling hills of its wineries, this beautiful country is a destination for relaxation, adventure and discovery.</p>
+    <p class="text--lg">A two-week holiday in Australia is only the beginning. Now celebrating 50 years serving this fascinating country, Singapore Airlines offer flights to nine major cities across Australia. Let the world’s most awarded Airline take you there.</p>
 
 
 map:
@@ -22,7 +24,7 @@ map:
 
 
 
-<div class="overview">
+<div class="overview page__content">
 
 
 
@@ -30,7 +32,7 @@ map:
 
     <div class="overview__landing-content row row--padding text--center text--white">
       {% if page.landing.title-super %}
-        <div class="title title--super title--sm title--bold title--upper title--kerning-lg">{{page.landing.title-super}}</div>
+        <div class="title title--display title--super title--sm title--bold title--upper title--kerning-lg">{{page.landing.title-super}}</div>
       {% endif %}
       <h1 class="title title--display title--display-size">
         {{page.landing.title}}
@@ -54,9 +56,3 @@ map:
   {% include nav/microsite-nav.html class="overview__nav" %}
 
 </div>
-
-
-
-
-<div class="page__content">
-</div><!-- end .page__content -->

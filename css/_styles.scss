@@ -12,6 +12,10 @@
   &--grey-lightest { background-color: $grey-lightest; }
 
   &--theme-primary { background-color: $theme-primary; }
+  &--theme-secondary { background-color: $theme-secondary; }
+
+  &--sq-primary { background-color: $sq-primary; }
+  &--sq-secondary { background-color: $sq-secondary; }
 
   &--fixed {
     background-repeat: no-repeat;
@@ -20,6 +24,8 @@
     background-attachment: fixed;
     .touch & { background-attachment: scroll; }
   }
+
+  &--rounded { border-radius: 3px; }
 }
 
 
@@ -31,5 +37,81 @@
   &.has-nav {
     padding-bottom: $page-nav-height;
     &__content {}
+  }
+}
+
+
+
+
+.tag {
+  padding: 0.5em 1em;
+  background-color: $grey-lighter;
+  border-radius: 3px;
+  display: inline-block;
+  margin-right: 0.2em;
+  margin-bottom: $s1;
+}
+.location {
+  &:before {
+    content: "";
+    display: inline-block;
+    height: 1.5em;
+    width: 1.05em;
+    margin-right: .5em;
+    margin-bottom: .2em;
+    vertical-align: middle;
+    background-image: url( "../img/icons/map-pin.png" );
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-size: contain;
+    .svg & { background-image: url( "../img/icons/map-pin.svg" ); }
+  }
+}
+
+
+
+
+
+.expert {
+  &__img {
+    max-width: 16rem;
+    max-height: 16rem;
+    border-radius: 30rem;
+    margin-bottom: $s2;
+    .text--center & { margin-left: auto; margin-right: auto; }
+  }
+}
+
+
+
+
+.flight {
+  @include transition();
+  overflow: hidden;
+  border-radius: 3px;
+  box-shadow: 0px 15px 45px rgba($grey-darkest,0.3);
+  transform: scale(1);
+  &:hover {
+    box-shadow: 0px 20px 60px rgba($grey-darkest,0.5);
+    transform: scale(1.025);
+  }
+
+  &__image {
+    @include background-attributes();
+  }
+  &__text {}
+}
+
+
+
+
+
+.three-sixty {
+  &__icon {
+    max-width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: $s2;
   }
 }

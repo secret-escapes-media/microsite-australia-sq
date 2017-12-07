@@ -13,61 +13,45 @@ intro: >
 
 game-results:
 
-  - id: city-modern
-    link: city-breaks
-    link-title: City Breaks
-    title: A modern city break
-    content: For you, the electric buzz of the modern city is what you want from your getaway. Glass spires pierce the skyline whereas at ground floor the city ticks an upbeat tempo. Alight at trendy cocktail bars, discover a host of contemporary galleries, and immerse yourself in the throws of the city.
-    offer-id: intimate-maldives-escape
+  - id: city-hidden
+    title: Hidden Gems
+    content: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    offer-id: unique-boutique-luxury-australia
 
-  - id: city-historical
-    link: city-breaks
-    link-title: City Breaks
-    title: A city break full of history and culture
-    content: Remarkable architecture, streets pierced by ruins that halt modernity, stories and tales that stretch back  centuries – you want a city break packed with cultural exploits. From Rome to Athens and beyond, you can’t sit still until your itinerary is packed with museums, monuments and galleries, interspersed by espresso stops and quaint, vibrant bars.
-    offer-id: adaaran-prestige-vadoo
+  - id: city-icons
+    title: Iconic landmarks
+    content: Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    offer-id: unique-boutique-luxury-australia
 
-  - id: stay-cosy
-    link: staycations
-    link-title: Staycations
-    title: A cosy stay in the UK
-    content: Forget flying abroad, the wintery countryside of Britain fills you with wanderlust. Rolling valleys and effortlessly picturesque villages offer delightful escapes, framed by tea, a full english, and plenty of cosy pub stops following a day’s ramble.
-    offer-id: intimate-maldives-escape
+  - id: nature-wildlife
+    title: Wildlife
+    content: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
+    offer-id: unique-boutique-luxury-australia
 
-  - id: stay-spa
-    link: staycations
-    link-title: Staycations
-    title: A lavish spa break in the UK
-    content: Forget trudging to the airport, sink into comfort at a grand stately home. A very British luxury awaits, where you’ll be pampered all day long in sumptuous spas. Brave the cold and explore wild countryside, before heading back to the fireplace with a hot toddy.
-    offer-id: adaaran-prestige-vadoo
+  - id: nature-beaches
+    title: Beaches
+    content: Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+    offer-id: unique-boutique-luxury-australia
 
-  - id: sun-caribbean
-    link: winter-sun
-    link-title: Winter Sun
-    title: Escape to the Caribbean
-    content: Balmy beaches, propping up at rum shacks, sinking into clear, refreshing waters – we’re sure you need little persuasion. The Caribbean is the ultimate winter sun destination, offering breathtaking beauty, endearing culture, and plenty of sunshine. Leave your winter blues behind...
-    offer-id: intimate-maldives-escape
+  - id: relax-luxury
+    title: Luxury
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
+    offer-id: unique-boutique-luxury-australia
 
-  - id: sun-asia
-    link: winter-sun
-    link-title: Winter Sun
-    title: Winter Sun Asia
+  - id: relax-food
+    title: Foodie
     content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus maxime voluptas, maiores similique ut aliquid, repellat dolore reprehenderit soluta officia sunt sed impedit, tenetur ab saepe unde voluptates ad corrupti! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-    offer-id: adaaran-prestige-vadoo
+    offer-id: unique-boutique-luxury-australia
 
-  - id: winter-ski
-    link: winter-wonderland
-    link-title: Winter Wonderland
-    title: Hit the slopes
-    content: You want a winter adventure. Who can blame you? Sailing down mountains offers unparalleled thrills. Typified by jaw-dropping vistas over dramatic mountains, kick-back in wooden chalets, ready for a night enjoying famed off-piste action.
-    offer-id: intimate-maldives-escape
+  - id: remote-island
+    title: Islands
+    content: Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
+    offer-id: unique-boutique-luxury-australia
 
-  - id: winter-landscapes
-    link: winter-wonderland
-    link-title: Winter Wonderland
-    title: Explore a winter wilderness
-    content: Awe-inspiring landscapes, scenes that leave you speechless, is what you need this winter. Explore beguiling countryside, with vast glaciers and frothing geysers as waterfalls cascade in the distance. Feel the drama of the natural world with enchanting foreign lands...
-    offer-id: adaaran-prestige-vadoo
+  - id: remote-outback
+    title: Outback
+    content: Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Maecenas faucibus mollis interdum.
+    offer-id: unique-boutique-luxury-australia
 
 
 ---
@@ -75,36 +59,49 @@ game-results:
 
 
 <div class="section">
+
   <div class="row row--padding text--center">
     {{page.intro}}
   </div>
-</div>
 
+  <div class="row game">
 
-
-{% include page/offer-game.html %}
-
-
-
-<div class="section">
-  <div class="row row--padding">
-    {% include components/offers.html %}
-  </div>
-</div>
-
-
-
-<section class="section offer-promo vpad--xxxl">
-  <div class="offer-promo__bgs">
-    <div class="offer-promo__bg" style="background-image: url('{{ site.baseurl }}/img/offers/00-general-current-sales/01.jpg')"></div>
-    <div class="offer-promo__bg" style="background-image: url('{{ site.baseurl }}/img/offers/00-general-current-sales/02.jpg')"></div>
-    <div class="offer-promo__bg" style="background-image: url('{{ site.baseurl }}/img/offers/00-general-current-sales/03.jpg')"></div>
-  </div>
-  <div class="row row--padding row--xxl offer-promo__content text--white line-length">
-    <h2 class="title title--core title--lg title--light">That’s not all we do...</h2>
-    <div>
-      <p class="text--xl">Didn’t see anything to take your fancy? Well, we have loads more offers with savings of up to 70%!</p>
-      <a href="https://www.secretescapes.com/current-sales" class="btn btn--orange">See All Current Sales</a>
+    <div class="row row--padding text--center">
+      <h3 class="title title--md title--upper title--kerning">Find your perfect Australia holiday</h3>
+      <hr class="hr--center">
     </div>
+
+    <div class="row row--padding">
+      {% include page/offer-game.html %}
+    </div>
+
   </div>
-</section>
+
+</div>
+
+
+
+<div class="section bg--grey-lightest">
+
+  <div class="row row--padding text--center">
+    <h3 class="title title--md title--upper title--kerning">Australia holiday packages</h3>
+    <hr class="hr--center">
+    <p class="text--lg">Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+  </div>
+
+  <div class="row row--padding">
+    {% assign offers = site.data.offers %}
+
+    <div class="row">
+      {% for offer in offers %}
+        {% include components/offer.html type='direct' %}
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+
+
+{% include page/flights-banner.html %}

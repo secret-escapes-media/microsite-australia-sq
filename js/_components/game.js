@@ -22,26 +22,26 @@ var game               = '.game',
 var gameData = {
   "categories": [
       { "id": "city" },
-      { "id": "stay" },
-      { "id": "sun" },
-      { "id": "winter" }
+      { "id": "nature" },
+      { "id": "relax" },
+      { "id": "remote" }
     ],
   "styles": {
     "city": [
-        { "id": "city-modern" },
-        { "id": "city-historical" }
+        { "id": "city-hidden" },
+        { "id": "city-iconic" }
       ],
-    "stay": [
-        { "id": "stay-cosy" },
-        { "id": "stay-spa" }
+    "nature": [
+        { "id": "nature-wildlife" },
+        { "id": "nature-beaches" }
       ],
-    "sun": [
-        { "id": "sun-caribbean" },
-        { "id": "sun-asia" }
+    "relax": [
+        { "id": "relax-luxury" },
+        { "id": "relax-food" }
       ],
-    "winter": [
-        { "id": "winter-ski" },
-        { "id": "winter-landscapes" }
+    "remote": [
+        { "id": "remote-island" },
+        { "id": "remote-outback" }
       ]
     }
   };

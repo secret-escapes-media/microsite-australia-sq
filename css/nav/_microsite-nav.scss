@@ -55,6 +55,7 @@ $nav-width-bp: 500px;
     display: inline-block;
     white-space: nowrap;
     border-left: 1px solid $grey-lighter;
+    padding-top: 0 !important;
 
     font-weight: 600;
     font-size: $s-1;

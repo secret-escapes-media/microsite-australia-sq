@@ -1,25 +1,130 @@
 
-## Secret Escapes offers
+## Trailfinders offers
 ## ==============================================
 
 
 
-- title: Intimate Maldives escape
-  id: intimate-maldives-escape
-  location: smartline Eriyadu, North Malé Atoll
-  description: Revive yourself at a pristine Maldives island resort
-  price: 1299
-  price-description: per person for 7 nights
-  saved: 30
-  link: https://www.secretescapes.com/intimate-maldives-escape-smartline-eriyadu-north-male-atoll/sale?gce_bfpop=0&utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Maldives_Nov2017
+- title: Unique, Boutique & Luxury Australia
+  id: unique-boutique-luxury-australia
+  type: Multi Centre Holiday
+  duration: 15
+  description: Explore Australia’s hidden gems and stay in some of the most outstanding and unique accommodation this country has to offer.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "All domestic flights"
+    - item: "2 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
+    - item: "14 nights 4*+ to 5* accommodation including 6 breakfasts, 2 lunches & 4 dinners"
+    - item: "Day tours: Sydney City Tour, Rottnest Island Adventure"
+  price: XXX
+  link:
 
-- title: Adaaran Prestige Vadoo
-  id: adaaran-prestige-vadoo
-  location: South Malé Atoll, Maldives
-  description: Over-water villas at a barefoot-luxe Maldivian paradise, with half board and speedboat transfers
-  price: 467
-  price-description: per villa per night
-  saved: 59
-  link: https://www.secretescapes.com/adaaran-prestige-vadoo-south-male-atoll-maldives/sale?utm_source=SE_MEDIA&utm_medium=Hub&utm_campaign=Maldives_Nov2017
 
-  
+
+- title: Luxury Queensland
+  id: luxury-queensland
+  type: Multi Centre Holiday
+  duration: 14
+  description: Stay in luxurious, unique hotels as you explore this diverse state. Enjoy cosmopolitan Brisbane, scenic valleys, inland tropical rainforest and the unforgettable Great Barrier Reef.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "All domestic flights"
+    - item: "2 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
+    - item: "13 nights 5* accommodation including 11 breakfasts, 4 lunches & 5 dinners"
+    - item: "Resort activities at Spicers Peak Lodge, Silky Oaks Lodge & Lizard Island Resort"
+  price: XXX
+  link:
+
+
+
+- title: Sydney, Rock & Reef
+  id: sydney-rock-reef
+  type: Multi Centre Holiday
+  duration: 12
+  description: Perfect for first time visitors, this fantastic three centre holiday brings together Australia’s most iconic and unforgettable attractions.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "All domestic flights"
+    - item: "11 nights 3* to 3*+ accommodation"
+    - item: "Day tours: Sydney City Tour, Uluru Base & Sunset Tour, Kings Canyon National Park from Uluru, Quicksilver Outer Barrier Reef Cruise"
+  price:
+  link:
+
+
+
+- title: Top End by Rail & Outback Wilderness
+  id: top-end-by-rail-outback-wilderness
+  type: Rail Journey
+  duration: 9
+  description: From the tropics to the desert, combine the romance of an overnight journey aboard The Ghan with a fly drive holiday exploring the vast wilderness of the Red Centre.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "5 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
+    - item: "7 nights 4* accommodation "
+    - item: "1 night on board The Ghan in a Gold Service Cabin including 1 breakfast, 1 lunch & 1 dinner and off train excursion at Katherine"
+    - item: "Day tours: Darwin Sunset Cruise, Litchfield National Park day tour, Uluru Morning Guided base walk"
+  price:
+  link:
+
+
+
+- title: South Western Escape
+  id: south-western-escape
+  type: Escorted Coach Tour
+  duration: 10
+  description: Explore the rugged beauty of Western Australia’s southern coast, Visit the famous Margaret River wine region, the unique Wave Rock and the region’s gold mining heritage.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "Return airport transfers in Australia"
+    - item: "9 nights 3* to  3*+ accommodation including 9 breakfasts, 1 lunch & 7 dinners"
+    - item: "Sightseeing & excursions "
+  price:
+  link:
+
+
+
+- title: Pacific Coastal Run
+  id: pacific-coastal-run
+  type: Motorhome Holiday
+  duration: 14
+  description: Your motorhome will offer apartment style living on the road as you journey from Sydney along the east coast of Australia, stopping at glorious beaches, charming Byron Bay and Queensland’s Gold Coast.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "11 days motorhome, including an Inclusive Pack with a zero insurance excess"
+    - item: "3 nights 3*+ accommodation in Sydney before you collect the motorhome"
+  price:
+  link:
+
+
+
+- title: Absolute Luxury Australia
+  id: absolute-luxury-australia
+  type: Multi Centre Holiday
+  duration: 15
+  description: See Australia in style! Experience iconic wonders and stay at some of the country’s most luxurious properties with an array of included activities.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "All domestic flights"
+    - item: "14 nights 5* to 5*+ accommodation including 11 breakfasts, 6 lunches & 6 dinners"
+    - item: "Resort activities at Southern Ocean Lodge, Emirates One&Only Wolgan Valley & Longitude 131°"
+    - item: "Day tours: Sydney Harbour Dinner Cruise, Whitehaven Beach & Hill Inlet Lookout"
+    - item: "All transfers"
+  price:
+  link:
+
+
+
+- title: Great Southern Touring Route
+  id: great-southern-touring-route
+  type: Fly Drive Holiday
+  duration: 12
+  description: A journey of contrasts, from the sophisticated city of Melbourne to the stunning coastal scenery of the Great Ocean Road and the rugged mountains of the Grampians National Park.
+  included:
+    - item: "Return international flights with Singapore Airlines"
+    - item: "9 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
+    - item: "11 nights 3* to 4* accommodation including 6 breakfasts "
+    - item: "Day tours: 12 Apostles Helicopter Flight, Melbourne’s Lanes & Arcades Walking Tour"
+  price:
+  link:
+
+
+

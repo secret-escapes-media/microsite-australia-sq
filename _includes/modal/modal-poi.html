@@ -17,21 +17,14 @@
 
             <h2 class="title title--sm title--bold">{{poi.title}}</h2>
 
-            {% if poi.distance %}
-              <p class="poi__location"> {{ poi.distance }}</p>
-            {% endif %}
-
             <p>{{poi.content}}</p>
 
-            <div class="vpad--sm">
-              <h4 class="title title--xs title--lined title--upper title--kerning">Fly there</h4>
-            </div>
-
-            {% assign flight = site.data.flights | where:"id",poi.flight %}
-            {% for flight in flight %}
-            <h4 class="title title--xxs title--bolder">{{flight.title}}</h4>
-            <h6 class="title title--upper title--kerning">{{flight.duration}}</h6>
-            {% endfor %}
+            {% if poi.locations %}
+              <hr>
+              {% for location in poi.locations %}
+                <div class="tag"><span class="location title title--xxxxs title--bolder title--upper">{{location.title}}</span></div>
+              {% endfor %}
+            {% endif %}
 
           </div>
         </div>

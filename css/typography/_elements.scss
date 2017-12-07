@@ -73,7 +73,9 @@ hr {
   background-color: $grey-lighter;
   margin: $s1 0;
   .title + & { padding-top: 0; margin-top: $s1; }
+  .page__content & + p { padding-top: 0; }
 }
 .hr {
   &--center { width: 80px; margin-left: auto; margin-right: auto; }
+  &--left { width: 80px; display: block; margin-left: 0; }
 }
