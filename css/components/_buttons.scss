@@ -48,6 +48,25 @@
       background-color: $orange;
     }
   }
+  &--outline {
+    color: $headline;
+    &:before {
+      // creates a border within the button dimentions. useful if an outline
+      // button is inline with a solid colour button
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border: 1px solid $grey-darker;
+      border-radius: inherit;
+    }
+    &:hover {
+      color: $orange;
+      background-color: $grey-darker;
+    }
+  }
   &--white-outline {
     color: $white;
     &:before {
