@@ -27,6 +27,7 @@
     }
   }
   &__bg { // need to rethink this - doesn't make sense to have .bg-img with a .bg inside of it
+    @include transition();
     position: absolute;
     top: 0;
     left: 0;
@@ -35,7 +36,8 @@
     z-index: $z-content;
     @include background-attributes;
     background-image: url(../img/img.jpg);
-    opacity: .8;
+    opacity: .6;
+    .bg-img:hover & { opacity: .8; }
   }
   &--shadow {
     box-shadow: 0px 15px 45px rgba($grey-darkest,0.3);

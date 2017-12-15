@@ -15,30 +15,27 @@ landing:
     <p class="text--lg">A two-week holiday in Australia is only the beginning. Now celebrating 50 years serving this fascinating country, Singapore Airlines offer flights to nine major cities across Australia. Let the world’s most awarded Airline take you there.</p>
 
 
-map:
-
-
 
 ---
+{% assign locations = site.data.map %}
 
 
 
-
-<div class="overview page__content">
-
+<div class="overview">
 
 
-  <div class="overview__landing">
 
-    <div class="overview__landing-content row row--padding text--center text--white">
+  <div class="overview-landing page__content">
+
+    <div class="overview-landing__content row row--padding text--center text--white">
       {% if page.landing.title-super %}
-        <div class="title title--display title--super title--sm title--bold title--upper title--kerning-lg">{{page.landing.title-super}}</div>
+        <div class="title title--super title--sm title--upper title--kerning-lg">{{page.landing.title-super}}</div>
       {% endif %}
-      <h1 class="title title--display title--display-size">
+      <h1 class="title title--display title--display-size title--kerning">
         {{page.landing.title}}
       </h1>
       {% if page.landing.title-sub %}
-        <div class="title title--sub title--sm title--bold title--upper title--kerning-lg">{{page.landing.title-sub}}</div>
+        <div class="title title--sub title--sm title--upper title--kerning-lg">{{page.landing.title-sub}}</div>
       {% endif %}
       <hr class="hr--center">
       {{page.landing.intro}}
@@ -49,10 +46,37 @@ map:
 
 
 
-  <div class="overview__map">
+  <div class="overview-map">
+    <div class="overview-map__content">
 
+        <div class="overview-map__australia">
+
+          <div class="overview-map__locations">
+
+            {% for location in locations.locations %}
+              <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__location" style="top: {{location.top}}%; left: {{location.left}}%;"></a>
+            {% endfor %}
+
+            {% for location in locations.airports %}
+              <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__location overview-map__location--airport" style="top: {{location.top}}%; left: {{location.left}}%;"></a>
+            {% endfor %}
+
+          </div>
+
+          <img src="{{site.baseurl}}/img/bg/overview/map.png" width="100%">
+
+        </div>
+
+    </div>
+    <div class="overview-map__frame overview-map__frame-left"></div>
+    <div class="overview-map__frame overview-map__frame-right"></div>
   </div>
 
   {% include nav/microsite-nav.html class="overview__nav" %}
 
 </div>
+
+
+
+
+{% include modal/modal-map.html %}

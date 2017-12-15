@@ -1,0 +1,43 @@
+
+<div class="section vpad--xxl">
+  <div class="wp" id="section-{{section.title | slugify}}"></div>
+
+  <div class="row row--padding text--center">
+    <h3 class="title title--xl title--display title--kerning">{{section.title}}</h3>
+    <p class="text--xl line-length--lg">{{section.content}}</p>
+  </div>
+
+
+
+  {% assign lodge = section.lodge %}
+
+
+  <div class="bob row row--padding">
+
+    <div class="bob__image bg-img--rounded">
+      <div class="bg-img bg-img--16-9" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/lodge/01.jpg);"></div>
+      <div class="row row--6-6">
+        <div class="col bg-img bg-img--3-2" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/lodge/02.jpg);"></div>
+        <div class="col bg-img bg-img--3-2" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/lodge/03.jpg);"></div>
+      </div>
+    </div>
+
+    <div class="bob__text">
+      <h3 class="title title--lg">{{lodge.title}}</h3>
+      <p class="title title--bold title--bolder title--upper title--kerning location">{{lodge.location}}</p>
+      <hr class="hr--left">
+      <p class="text--lg">{{lodge.content}}</p>
+      <a href="{{lodge.link}}" class="btn btn--solid">View this luxury lodge</a>
+    </div>
+
+  </div>
+
+  {% if section.link %}
+  <div class="row row--padding text--center">
+    <a href="{{ section.link }}" id="tracking-btn-{{section.title|slugify}}" class="btn btn--lg btn--solid">Read more</a>
+  </div>
+  {% endif %}
+
+
+
+</div>

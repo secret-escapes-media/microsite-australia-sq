@@ -103,4 +103,21 @@
     float: none !important;
   }
 
+  // SINGLE OFFER CARD
+  &--single {
+    max-width: $xl;
+    @include layout(12 1);
+    @include gallery(12);
+    margin-right: auto;
+    margin-left: auto;
+    float: none !important;
+    box-shadow: 0 0 10px 0 rgba($grey-darkest,0.4);
+    .offer {
+      &__content {
+        padding: $s2;
+        border: 0 !important;
+      }
+    }
+  }
+
 }

@@ -1,0 +1,141 @@
+---
+layout: standard
+id: flights
+title: Getting There
+nav-order: 7
+
+
+intro: >
+  <p class="text--xl text--bold">Begin your Australian adventure in affordable luxury; fly Singapore Airlines.</p>
+  <p class="text--lg">What better way to travel to the golden shores and urban jungles of Australia than with the world’s most awarded airline? Singapore Airlines has served Australia for more than 50 years, with over 150 flights on its weekly schedule. Fly direct from London to nine Australian cities, or continue your journey with Virgin Australia, offering 3,000 weekly flights to over 40 countrywide destinations. </p>
+  <p class="text--lg">As well as hotel and transport deals to complete your holiday down under, Singapore Airlines’ well-timed flights minimize the effects of jet lag, meaning your adventure can begin as soon as you step off the plane. </p>
+  <p class="text--lg">From classic Australian coastal journeys to exploring its cosmopolitan cityscapes, let Singapore Airlines take you to the heart of this eclectic and vibrant country. </p>
+  <a href="#" class="btn btn--sq">View all flights</a>
+
+
+
+flights:
+
+  - title: Melbourne
+    duration: >
+      <p class="text--lg"><span class="text--bold">21 hours 55 minutes</span></span> from London Heathrow</p></p>
+    frequency: Fly to Melbourne from London with four daily non-stop connections from Singapore
+    content: Add accommodation to your booking to get a fantastic deal on your next visit to Melbourne
+
+  - title: Sydney
+    duration: >
+      <p class="text--lg"><span class="text--bold">22 hours 25 minutes</span> from London Heathrow</p>
+    frequency: Fly to Sydney from London with 31 weekly non-stop connections from Singapore
+    content: Enjoy a complimentary stop-over in Changi and explore the world’s first airport butterfly garden
+
+  - title: Brisbane
+    duration: >
+      <p class="text--lg"><span class="text--bold">22 hours 50 minutes</span> from London Heathrow</p>
+    frequency: Fly to Brisbane from London with 24 weekly non-stop connections from Singapore
+    content: Book a car rental with your flight to see more of Australia’s east coast
+
+  - title: Cairns
+    duration: >
+      <p class="text--lg"><span class="text--bold">24 hours 45 minutes</span> from London Heathrow</p>
+    frequency: Fly to Cairns from London with three weekly non-stop connections from Singapore
+    content: Benefit from the award-winning services of Changi Airport, for the ultimate stress-free transfer
+
+  - title: Perth
+    duration: >
+      <p class="text--lg"><span class="text--bold">19 hours 20 minutes</span> from London Heathrow</p>
+    frequency: Fly to Perth from London with four daily non-stop connections from Singapore
+    content: Add accommodation to your booking to ensure the most unforgettable of stays in Perth
+
+  - title: Darwin
+    duration: >
+      <p class="text--lg"><span class="text--bold">18 hours 25 minutes</span> from London Heathrow</p>
+    frequency: Fly to Darwin from London with five weekly non-stop connections from Singapore
+    content: With connections to over 40 Australian destinations and 3,000 weekly flights, make Darwin your gateway of choice
+
+  - title: Adelaide
+    duration: >
+      <p class="text--lg"><span class="text--bold">24 hours 55 minutes</span> from London Heathrow</p>
+    frequency: Fly to Adelaide from London with daily non-stop flights from Singapore
+    content: Add a hotel to your booking and make your next trip to Adelaide unforgettable
+
+  - title: Gold Coast
+    duration: >
+      <p class="text--lg"><span class="text--bold">Less than 26 hours</span> from London Heathrow</p>
+    frequency: Fly to the Gold Coast from London with xx flights from Singapore
+    content: Add a rental car to your booking and take to Australia’s most beautiful coastal roads
+
+  - title: Canberra
+    duration: >
+      <p class="text--lg"><span class="text--bold">24 hours 40 minutes</span> from London Heathrow</p>
+    frequency: Fly to Canberra from London with four weekly direct flight from Singapore
+    content: Add a rental car to your booking and indulge in the ultimate Australian road trip
+
+
+---
+
+
+
+<div class="section">
+  <div class="row row--padding text--center">
+    {{page.intro}}
+  </div>
+</div>
+
+
+
+<!--
+<div class="section">
+  <div class="row row--padding">
+    {% assign page-topics = page.topics %}
+    {% for topic in page-topics %}
+      <div class="bob">
+        <div class="bob__image">
+          <a href="{{site.baseurl}}/{{topic.link}}"><div class="bg-img bg-img--1-1" style="background-image: url('{{site.baseurl}}/img/content/overview/{{topic.title|slugify}}.jpg');"></div></a>
+        </div>
+        <div class="bob__text">
+          <div class="title title--light title--italic title--md {% cycle 'text--blue', 'text--cyan', 'text--green'  %}">{{topic.title}}</div>
+          <p class="text--lg">{{topic.description}}</p>
+          <a href="{{site.baseurl}}/{{topic.link}}" class="btn {% cycle 'btn--grad-blue', 'btn--grad-cyan', 'btn--grad-green' %}">{{topic.link-text}}</a>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="space--lg"></div>
+</div> -->
+
+
+
+<div class="section bg--grey-lightest">
+
+  <div class="row row--padding text--center">
+    <h3 class="title title--lg title--upper title--kerning">Our Flights</h3>
+  </div>
+
+  <div class="row row--padding">
+    {% for flight in page.flights %}
+
+      <div class="flight row row--4-8 row--xl bg--rounded bg--white row--valign">
+
+        <div class="flight__image col row--padding vpad--xl text--white" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/flight-{{flight.title|slugify}}.jpg);">
+          <h4 class="title title--display title--xs title--upper title--kerning title--bold">{{flight.title}}</h4>
+          <hr class="hr--left">
+          {{flight.duration}}
+        </div>
+
+        <div class="flight__text col row--padding vpad--md">
+          <p class="text--bold">{{flight.frequency}}</p>
+          <p>{{flight.content}}</p>
+          <a href="#" class="btn btn--solid btn--sq btn--sm">Flights from £XXX</a>
+        </div>
+
+      </div>
+
+    {% endfor %}
+  </div>
+
+
+  <div class="row row--padding vpad-top--md text--center">
+    <a href="#" class="btn btn--sq">View all flights</a>
+  </div>
+
+</div>

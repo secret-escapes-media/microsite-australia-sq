@@ -4,7 +4,7 @@
 ///////////////////////////////////////
 
 var startBtn    = $('.js-overview-start'),
-    landingPage   = $('.overview__landing');
+    landingPage   = $('.overview-landing');
 
 startBtn.click(function(){
   landingPage.fadeOut();

@@ -3,7 +3,7 @@
 
 $page-nav-height: 50px;
 $nav-arrow-width: $s8;
-$nav-width-bp: 500px;
+$nav-width-bp: 1000px;
 
 .page-nav {
   position: absolute;
@@ -13,8 +13,7 @@ $nav-width-bp: 500px;
   overflow: hidden;
   text-align: center;
   background-color: rgba($white,0.85);
-  border-top: 1px solid $grey-lightest;
-  border-bottom: 1px solid $grey-lightest;
+  border-top: 1px solid rgba($grey-darkest, 0.1);
   @include bp(md){ height: $page-nav-height; }
   &.stuck {
     position: fixed; top: 0; bottom: auto;
@@ -65,14 +64,14 @@ $nav-width-bp: 500px;
     margin-left: 0 !important;
     display: inline-block;
     white-space: nowrap;
-    border-left: 1px solid $grey-lightest;
+    border-left: 1px solid rgba($grey-darkest, 0.1);
     font-weight: 600;
     font-size: $s-1;
     letter-spacing: .143em;
     line-height: $page-nav-height;
     text-transform: uppercase;
     color: $grey-dark;
-    &:last-child { border-right: 1px solid $grey-lightest; }
+    &:last-child { border-right: 1px solid rgba($grey-darkest, 0.1); }
     @include transition;
     &:hover {
       color: $grey-darker;

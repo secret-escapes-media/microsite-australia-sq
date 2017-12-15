@@ -1,31 +1,21 @@
 <div class="col poi">
-
-  <div class="poi__image bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/pois/{{poi.title|slugify}}.jpg');">
+  <a href="javascript:void(0);" data-modal-id="modal-pois" data-modal-item-id="{{poi.title|slugify}}" class="js-open-modal poi__image bg-img bg-img--3-2" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/pois/{{poi.title|slugify}}.jpg');">
     {% if poi.image-credit %}
     <div class="bg-img__credit">
       {{poi.image-credit}}
     </div>
     {% endif %}
-  </div>
+  </a>
 
   <div class="space--md"></div>
-  <h4 class="title title--md title--bold">{{poi.title}}</h4>
+  <h4 class="title title--sm">{{poi.title}}</h4>
 
   {% if poi.title-sub %}
-    <div class="title title--xxxs title--bolder">{{poi.title-sub}}</div>
+    <div class="title title--xxxs title--bold">{{poi.title-sub}}</div>
   {% endif %}
 
-  <p class="text--small">{{poi.content}}</p>
+  <p class="text--small">{{poi.content|truncate:300}}</p>
 
-  <div class="poi__footer">
-    <hr>
-
-    {% if poi.locations %}
-    {% for location in poi.locations %}
-      <div class="tag"><span class="location title title--xxxxs title--bolder title--upper">{{location.title}}</span></div>
-    {% endfor %}
-    {% endif %}
-
-  </div>
+  <a href="javascript:void(0);" data-modal-id="modal-pois" data-modal-item-id="{{poi.title|slugify}}" class="js-open-modal btn btn--solid btn--sm">Read more</a>
 
 </div>

@@ -1,0 +1,108 @@
+---
+layout: standard
+id: trip-planner
+title: Trip Planner
+nav-order: 6
+
+
+
+intro: >
+  <p class="text--xl">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+
+
+
+game-results:
+
+  - id: city-hidden
+    title: Hidden Gems
+    content: Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Maecenas faucibus mollis interdum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nulla vitae elit libero, a pharetra augue. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+    offer-id: unique-boutique-luxury-australia
+
+  - id: city-icons
+    title: Iconic landmarks
+    content: Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    offer-id: unique-boutique-luxury-australia
+
+  - id: nature-wildlife
+    title: Wildlife
+    content: Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Vestibulum id ligula porta felis euismod semper. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
+    offer-id: unique-boutique-luxury-australia
+
+  - id: nature-beaches
+    title: Beaches
+    content: Vestibulum id ligula porta felis euismod semper. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.
+    offer-id: unique-boutique-luxury-australia
+
+  - id: relax-luxury
+    title: Luxury
+    content: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Donec sed odio dui. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec id elit non mi porta gravida at eget metus.
+    offer-id: unique-boutique-luxury-australia
+
+  - id: relax-food
+    title: Foodie
+    content: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus maxime voluptas, maiores similique ut aliquid, repellat dolore reprehenderit soluta officia sunt sed impedit, tenetur ab saepe unde voluptates ad corrupti! Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    offer-id: unique-boutique-luxury-australia
+
+  - id: remote-island
+    title: Islands
+    content: Maecenas faucibus mollis interdum. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod.
+    offer-id: unique-boutique-luxury-australia
+
+  - id: remote-outback
+    title: Outback
+    content: Sed posuere consectetur est at lobortis. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nulla vitae elit libero, a pharetra augue. Donec sed odio dui. Maecenas faucibus mollis interdum.
+    offer-id: unique-boutique-luxury-australia
+
+
+---
+
+
+
+<div class="section">
+
+  <div class="row row--padding text--center">
+    {{page.intro}}
+  </div>
+
+  <div class="row game">
+
+    <div class="row row--padding text--center">
+      <hr class="hr--center">
+      <h3 class="title title--lg title--display title--kerning">Find your perfect Australia holiday</h3>
+      <hr class="hr--center">
+    </div>
+
+    <div class="row row--padding">
+      {% include page/offer-game.html %}
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<div class="section bg--grey-lightest">
+
+  <div class="row row--padding text--center">
+    <h3 class="title title--md title--upper title--kerning">Australia holiday packages</h3>
+    <hr class="hr--center">
+    <p class="text--lg">Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+  </div>
+
+  <div class="row row--padding">
+    {% assign offers = site.data.offers %}
+
+    <div class="row">
+      {% for offer in offers %}
+        {% include components/offer.html type='direct' %}
+      {% endfor %}
+    </div>
+
+  </div>
+
+</div>
+
+
+
+{% include page/flights-banner.html %}

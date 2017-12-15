@@ -1,0 +1,29 @@
+
+<div class="js-modal modal is-closed" id="modal-map">
+  <div class="modal__ui-wrap row">
+    <div class="js-close-modal modal__close"></div>
+    <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+    <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
+    <div class="modal__content-wrap row">
+
+      {% assign pois = site.data.map.locations | concat: site.data.map.airports %}
+      {% for poi in pois %}
+
+        <div class="modal__content modal__content--{{poi.title|slugify}}"  data-content-category="{{section.title|slugify}}">
+
+          <div class="bg-img bg-img--16-9" style="background-image:url('{{site.baseurl}}/img/content/{{page.id}}/pois/{{poi.title|slugify}}.jpg');"></div>
+
+          <div class="modal__content--padding vpad--xs text--center bg--grey-darkest text--white">
+
+            <h2 class="title title--sm title--bold">{{poi.title}}</h2>
+            <hr class="hr--center">
+            <p>{{poi.content}}</p>
+
+          </div>
+        </div>
+
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

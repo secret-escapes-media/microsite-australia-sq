@@ -20,10 +20,28 @@
             <p>{{poi.content}}</p>
 
             {% if poi.locations %}
-              <hr>
+              <div class="vpad-top--sm">
               {% for location in poi.locations %}
-                <div class="tag"><span class="location title title--xxxxs title--bolder title--upper">{{location.title}}</span></div>
+                <div class="tag">
+                  {% if location.airport %}
+                    <span class="gateway title title--xxxxs title--bold">{% if location.title %}<span class="title--boldest">{{location.title}}</span>, {% endif %}Closest airport: <span class="title--boldest">{{location.airport}}</span></span>
+                  {% else %}
+                    <span class="location title title--xxxxs title--boldest">{{location.title}}</span>
+                  {% endif %}
+                </div>
               {% endfor %}
+              </div>
+            {% endif %}
+
+            {% if poi.offer-id %}
+              <hr>
+              <span class="title title--xxxs title--upper title--kerning">Included in the following holiday package:</span>
+              <div class="vpad-top--sm">
+                {% assign offer = site.data.offers | where: "id", poi.offer-id %}
+                {% for offer in offer %}
+                  {% include components/offer-single.html type='direct' %}
+                {% endfor %}
+              </div>
             {% endif %}
 
           </div>

@@ -2,9 +2,9 @@
 <div class="page-nav">
   <div class="row row--padding">
     <ul class="page-nav__list">
-      {% for section in page.sections %}
+      {% for section in page.sections %}{% unless section.nav-hidden %}
       <li class="page-nav__item"><a href="#section-{{ section.title | slugify }}" class="page-nav__link">{{ section.title }}</a></li>
-      {% endfor %}
+      {% endunless %}{% endfor %}
     </ul>
   </div>
 </div>

@@ -1,0 +1,21 @@
+<div class="offer offer--single{% if include.type == 'direct' %} offer--direct{% endif %} {{include.class}}">
+
+  <a class="offer__link" href="{{ offer.link }}"><span class="btn btn--tf">View Offer</span></a>
+
+  <div class="row row--6-6 row--valign">
+
+    <div class="col bg-img bg-img--4-3" style="background-image: url('{{ site.baseurl }}/img/offers/{{offer.id}}.jpg')">
+      <div class="offer__price">From <span class="text--bolder">{{offer.price}}</span></div>
+    </div>
+
+    <div class="col offer__content">
+      <h3 class="title title--xxxs title--bold">{{ offer.title }}</h3>
+      <h4 class="title--xxxxs title--upper title--kerning"><span class="text--bold">{{ offer.type }}</span> | <span class="text--bold">{{offer.duration}}</span> days</h4>
+
+      <p class="offer__description">{{ offer.description}}</p>
+
+    </div>
+
+  </div>
+
+</div>
