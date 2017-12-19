@@ -25,6 +25,8 @@
     .touch & { background-attachment: scroll; }
   }
 
+  &--image { @include background-attributes(); }
+
   &--rounded { border-radius: 3px; }
 }
 
@@ -130,5 +132,13 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: $s2;
+  }
+}
+
+
+
+.sq-feature {
+  @include bp(lg){
+    margin-bottom: 2em;
   }
 }

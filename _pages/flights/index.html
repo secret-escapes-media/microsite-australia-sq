@@ -5,12 +5,32 @@ title: Getting There
 nav-order: 7
 
 
+
 intro: >
   <p class="text--xl text--bold">Begin your Australian adventure in affordable luxury; fly Singapore Airlines.</p>
-  <p class="text--lg">What better way to travel to the golden shores and urban jungles of Australia than with the world’s most awarded airline? Singapore Airlines has served Australia for more than 50 years, with over 150 flights on its weekly schedule. Fly direct from London to nine Australian cities, or continue your journey with Virgin Australia, offering 3,000 weekly flights to over 40 countrywide destinations. </p>
-  <p class="text--lg">As well as hotel and transport deals to complete your holiday down under, Singapore Airlines’ well-timed flights minimize the effects of jet lag, meaning your adventure can begin as soon as you step off the plane. </p>
-  <p class="text--lg">From classic Australian coastal journeys to exploring its cosmopolitan cityscapes, let Singapore Airlines take you to the heart of this eclectic and vibrant country. </p>
-  <a href="#" class="btn btn--sq">View all flights</a>
+  <p class="text--lg">What better way to travel to the golden shores and urban jungles of Australia than with the world’s most awarded airline? </p>
+  <p class="text--lg">Singapore Airlines has been serving Australia for more than 50 years, remaining the country’s most frequent visitor. With over 150 flights on its weekly schedule, including four daily from London and five weekly from Manchester, travel in comfort from the UK to nine Australian cities. Choose a regional departure with partners Flybe, National Express coaches and Great Western Railway and once you’ve arrived, continue your journey with Virgin Australia, offering 3,000 weekly flights to over 40 countrywide destinations.</p>
+  <a href="#flights" class="btn btn--sq">View all flights</a>
+
+
+
+features:
+
+  - title: Modern Fleet
+    content: >
+      <p class="text--lg">With a fleet of modern aircraft, Singapore Airlines offer premium in-flight comfort at an affordable price. Its newly unveiled cabins offer more space and privacy across all classes, as well as exceptional dining opportunities, designed by world-renowned exerts, and bespoke on-board elements created with the Singapore Airlines’ customer in mind.</p>
+
+  - title: Changi Airport
+    content: >
+      <p class="text--lg">With complimentary stop-overs in the award-winning Changi Airport, Singapore Airlines’ guests can enjoy a pleasant, seamless transfer to Australia. While you’re there, you won’t be short on things to do, with extensive shopping and dining facilities, free WiFi, a swimming pool and cinema, and the world’s first airport-based butterfly garden. All Singapore Airlines passengers will receive a S$20 (£11.50) voucher to spend in Changi during their transfer. </p>
+
+  - title: Rewards
+    content: >
+      <p class="text--lg">Singapore Airlines also offer its frequent flyers a special rewards scheme. KrisFlyer allows regular guests to earn and burn miles with Virgin Atlantic, Virgin Australia and all Star Alliance airlines, while Elite Gold members can access over 1,000 international Star Alliance lounges, including Virgin Australia Lounges throughout Australia. </p>
+
+  - title: Exceptional Services
+    content: >
+      <p class="text--lg">Boasting exceptional service, the world’s most awarded airline is renowned for going the extra mile when it comes to its customer. As well as hotel and transport deals to complete your holiday down under, Singapore Airlines’ well-timed flights minimize the effects of jet lag, meaning your adventure can begin as soon as you step off the plane. </p>
 
 
 
@@ -83,32 +103,35 @@ flights:
 
 
 
-<!--
-<div class="section">
-  <div class="row row--padding">
-    {% assign page-topics = page.topics %}
-    {% for topic in page-topics %}
-      <div class="bob">
-        <div class="bob__image">
-          <a href="{{site.baseurl}}/{{topic.link}}"><div class="bg-img bg-img--1-1" style="background-image: url('{{site.baseurl}}/img/content/overview/{{topic.title|slugify}}.jpg');"></div></a>
-        </div>
-        <div class="bob__text">
-          <div class="title title--light title--italic title--md {% cycle 'text--blue', 'text--cyan', 'text--green'  %}">{{topic.title}}</div>
-          <p class="text--lg">{{topic.description}}</p>
-          <a href="{{site.baseurl}}/{{topic.link}}" class="btn {% cycle 'btn--grad-blue', 'btn--grad-cyan', 'btn--grad-green' %}">{{topic.link-text}}</a>
-        </div>
-      </div>
-    {% endfor %}
-  </div>
-  <div class="space--lg"></div>
-</div> -->
-
-
 
 <div class="section bg--grey-lightest">
+  <div class="row row--padding text--center">
+    <h3 class="title title--display title--lg title--lined title--kerning">Experience Singapore Airlines</h3>
+  </div>
+  <div class="row row--padding row--xxxl row--6-6-gutters">
+    {% for feature in page.features %}
+
+      <div class="col">
+        <a href="javascript:void(0);" data-modal-id="modal-sq" data-modal-item-id="{{feature.title|slugify}}" class="js-open-modal bg-img bg-img--16-9 bg-img--rounded sq-feature text--white bg--sq-secondary">
+          <div class="bg-img__content">
+            <h4 class="title title--sm title--upper title--kerning">{{feature.title}}</h4>
+          </div>
+          <div class="bg-img__bg" style="background-image:url('{{site.baseurl}}/img/content/{{page.id}}/feature-{{feature.title|slugify}}.jpg');"></div>
+        </a>
+      </div>
+
+    {% endfor %}
+  </div>
+</div>
+
+
+
+<div class="section bg--grey-lightest vpad--none">
+  <div class="wp" id="flights"></div>
 
   <div class="row row--padding text--center">
-    <h3 class="title title--lg title--upper title--kerning">Our Flights</h3>
+    <span class="title title--xxs title--super title--upper title--kerning vpad-bottom--sm">Be taken in style, be looked after, be awarded</span>
+    <h3 class="title title--display title--lg title--lined title--kerning">Fly Singapore Airlines</h3>
   </div>
 
   <div class="row row--padding">
@@ -117,7 +140,7 @@ flights:
       <div class="flight row row--4-8 row--xl bg--rounded bg--white row--valign">
 
         <div class="flight__image col row--padding vpad--xl text--white" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/flight-{{flight.title|slugify}}.jpg);">
-          <h4 class="title title--display title--xs title--upper title--kerning title--bold">{{flight.title}}</h4>
+          <h4 class="title title--xxs title--upper title--kerning">{{flight.title}}</h4>
           <hr class="hr--left">
           {{flight.duration}}
         </div>
@@ -134,8 +157,15 @@ flights:
   </div>
 
 
-  <div class="row row--padding vpad-top--md text--center">
+  <div class="row row--padding vpad--md text--center">
     <a href="#" class="btn btn--sq">View all flights</a>
   </div>
 
+  <div class="space--xl"></div>
+
 </div>
+
+
+
+
+{% include modal/modal-sq.html %}

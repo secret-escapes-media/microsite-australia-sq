@@ -19,6 +19,10 @@
             <hr class="hr--center">
             <p>{{poi.content}}</p>
 
+            {% if poi.link %}
+            <a href="{{site.baseurl}}/{{poi.link}}#poi-{{poi.title|slugify}}" class="btn btn--solid btn--sm">Read more</a>
+            {% endif %}
+
           </div>
         </div>
 

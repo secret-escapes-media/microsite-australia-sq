@@ -4,36 +4,43 @@
 airports:
 
   - title: Brisbane
+    link: cities
     top: 52
     left: 81.5
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Gold Coast
+    link: cities
     top: 55
     left: 82
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Sydney
+    link: cities
     top: 70
     left: 79
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Canberra
+    link: cities
     top: 76
     left: 76
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Melbourne
+    link: cities
     top: 84
     left: 68
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Adelaide
+    link: cities
     top: 77
     left: 57.5
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Perth
+    link: cities
     top: 67
     left: 20
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
@@ -44,6 +51,7 @@ airports:
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Cairns
+    link: cities
     top: 27
     left: 70
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
@@ -58,6 +66,7 @@ locations:
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Kangaroo Island
+    link: coastal
     top: 80
     left: 56
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
