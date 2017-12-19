@@ -16,7 +16,16 @@
           <div class="modal__content--padding vpad--xs text--center bg--grey-darkest text--white">
 
             <h2 class="title title--sm title--bold">{{poi.title}}</h2>
+
+            {% if poi.weather-id %}
+              <div class="title title--upper title--kerning">
+                Tomorrows forecast in {{poi.title}} is
+                <span class="js-weather title--bolder" data-location="{{poi.weather-id}}"></span>
+              </div>
+            {% endif %}
+
             <hr class="hr--center">
+
             <p>{{poi.content}}</p>
 
             {% if poi.link %}

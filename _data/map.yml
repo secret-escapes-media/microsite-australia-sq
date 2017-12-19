@@ -5,53 +5,62 @@ airports:
 
   - title: Brisbane
     link: cities
+    weather-id: Brisbane, Australia
     top: 52
     left: 81.5
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Gold Coast
     link: cities
+    weather-id: Surfers Paradise, Australia
     top: 55
     left: 82
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Sydney
     link: cities
+    weather-id: Sydney, Australia
     top: 70
     left: 79
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Canberra
     link: cities
+    weather-id: Canberra, Australia
     top: 76
     left: 76
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Melbourne
     link: cities
+    weather-id: Melbourne, Australia
     top: 84
     left: 68
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Adelaide
     link: cities
+    weather-id: Adelaide, Australia
     top: 77
     left: 57.5
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Perth
     link: cities
+    weather-id: Perth, Australia
     top: 67
     left: 20
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Darwin
+    weather-id: Darwin, Australia
     top: 12.5
     left: 45.5
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.
 
   - title: Cairns
     link: cities
+    weather-id: Cairns, Australia
     top: 27
     left: 70
     content: Donec id elit non mi porta gravida at eget metus. Sed posuere consectetur est at lobortis. Aenean lacinia bibendum nulla sed consectetur.

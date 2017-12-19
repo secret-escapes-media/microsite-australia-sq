@@ -40,6 +40,7 @@ gulp.task('js', function(){
       './node_modules/jquery/dist/jquery.min.js',
       './node_modules/jquery-countdown/dist/jquery.countdown.min.js',
       './node_modules/fittext.js/jquery.fittext.js',
+      './js/_lib/jquery.simpleWeather.js',
 
       // custom js - with on doc ready wrapper
       './js/_components/on-ready/start.js',
@@ -50,6 +51,7 @@ gulp.task('js', function(){
       './js/_components/modal.js',
       './js/_components/game.js',
       './js/_components/overview.js',
+      './js/_components/weather.js',
 
       // custom js for project
       './js/script.js',
