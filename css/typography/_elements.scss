@@ -51,7 +51,7 @@
 // -------- general element styles --------
 
 .page__content {
-  * + p               { padding-top: $s1; }
+  * + p               { padding-top: $s-4; }
   * + ul,
   * + ol               { padding-top: $s-4; }
   li                   { list-style-position: outside; margin-left: $s2; }

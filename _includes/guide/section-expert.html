@@ -1,31 +1,30 @@
 
-<div class="section vpad--xxl bg--theme-primary text--white">
+<div class="section vpad--xxl bg--grey-darkest text--white">
   <div class="wp" id="section-{{section.title | slugify}}"></div>
 
 
 
   <div class="row row--padding text--center">
     <h3 class="title title--xl title--display title--kerning">{{section.title}}</h3>
-    <p class="text--xl line-length--lg">{{section.content}}</p>
+    <p class="text--xl">{{section.content}}</p>
   </div>
 
 
 
-  <div class="row row--padding row--4-8-gutters row--valign">
+  <div class="row row--padding row--4-8 row--valign">
 
-    <div class="col text--center">
+    <div class="col expert-intro">
 
-      <div class="expert__img bg-img bg-img--1-1" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/expert.jpg);"></div>
+      <div class="expert-intro__img bg-img bg-img--1-1" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/expert.jpg);"></div>
 
-      <h2 class="title title--md">{{page.expert.name}}</h2>
+      <h2 class="title title--sm">{{page.expert.name}}</h2>
       <span class="title title--bold title--upper title--kerning">{{page.expert.subtitle}}</span>
-      <hr class="hr--center">
-      <p class="text--lg">{{page.expert.content}}</p>
+      <p>{{page.expert.content}}</p>
     </div>
 
     {% assign pois = section.pois %}
     {% if pois %}
-      <div class="col pois">
+      <div class="col">
 
         {% for poi in pois %}
         {% unless poi.featured %}

@@ -24,9 +24,9 @@
               {% for location in poi.locations %}
                 <div class="tag">
                   {% if location.airport %}
-                    <span class="gateway title title--xxxxs title--bold">{% if location.title %}<span class="title--boldest">{{location.title}}</span>, {% endif %}Closest airport: <span class="title--boldest">{{location.airport}}</span></span>
+                    <span class="gateway title title--xxxxs title--bold"> {% if location.title %}<span class="title--boldest"> {{location.title}}</span>, {% endif %} Closest airport: <span class="title--boldest"> {{location.airport}}</span></span>
                   {% else %}
-                    <span class="location title title--xxxxs title--boldest">{{location.title}}</span>
+                    <span class="location title title--xxxxs title--boldest"> {{location.title}}</span>
                   {% endif %}
                 </div>
               {% endfor %}

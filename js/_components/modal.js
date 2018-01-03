@@ -63,6 +63,12 @@ modal.on('click', function(event) {
   }
   modalClose(event);
 });
+$('.modal__content-wrap').on('click', function(event) {
+  if (event.target !== this){
+    return;
+  }
+  modalClose(event);
+});
 
 // closes modal on escape key press
 $(document).keyup(function(event) {

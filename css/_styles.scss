@@ -92,15 +92,22 @@
 
 
 
-.expert {
+.expert-intro {
+  margin-bottom: 1.69492%;
+  padding: 2em;
+  padding-right: 60px;
+  margin-right: -30px;
+  background: -moz-linear-gradient(left, rgba(255,255,255,0.1) -30%, rgba(255,255,255,0) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0.1) -30%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0.1) -30%,rgba(255,255,255,0) 100%);
   &__img {
     max-width: 16rem;
     max-height: 16rem;
     border-radius: 30rem;
     margin-bottom: $s2;
-    .text--center & { margin-left: auto; margin-right: auto; }
   }
 }
+
 
 
 
@@ -132,13 +139,5 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: $s2;
-  }
-}
-
-
-
-.sq-feature {
-  @include bp(lg){
-    margin-bottom: 2em;
   }
 }

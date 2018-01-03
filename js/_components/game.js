@@ -306,7 +306,7 @@ function stickMsg(){
   }
 }
 
-if( $('body').hasClass('page--trailfinders') ){
+if( $('body').hasClass('page--trip-planner') ){
   $(document).scroll(function() { stickMsg(); });
 }
 

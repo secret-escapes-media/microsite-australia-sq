@@ -65,9 +65,6 @@
     &--xxxxs         { font-size: $s-1; }
   }
 
-  @include bp(lg){
-    &--display-size { font-size: $s11; }
-  }
 
 
 
