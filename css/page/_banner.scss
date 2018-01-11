@@ -38,22 +38,26 @@ $core-nav-height-sm:  $s8;
     background-color: rgba($white,0.8);
   }
 
+}
 
-  &--guide {
-    padding-top: $core-nav-height-sm*2;
-    @include bp(md){
-      padding-top: $core-nav-height*2;
+
+
+.layout--competition .banner {
+  height: 60%;
+  &__bg {
+    position: fixed;
+  }
+  &__nav {
+    bottom: auto;
+    top: $core-nav-height-sm;
+    @include bp(lg){
+      top: $core-nav-height;
     }
-
-    .banner{
-      &__nav {
-        bottom: auto;
-        top: $core-nav-height-sm;
-        background-color: $white;
-        @include bp(md){
-          top: $core-nav-height;
-        }
-      }
+  }
+  &__content {
+    padding-top: $core-nav-height-sm*2;
+    @include bp(lg){
+      padding-top: $core-nav-height*2;
     }
   }
 }

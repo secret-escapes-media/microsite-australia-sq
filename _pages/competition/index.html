@@ -1,23 +1,117 @@
 ---
-layout: standard
+layout: competition
 id: competition
 title: Competition
 nav-order: 8
 
 
+
 intro: >
-  <p class="text--xl">Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+  <p class="text--xl text--bolder">Embark on a luxurious tour of Australia with this enviable competition prize</p>
+  <p class="text--xl">From buzzing, urban landscapes packed with artisanal foodie delights and world-leading cultural exploits, to irresistible countryside framed by mountain vistas and lakeside splendour, this prize is set to offer you the finest, curated Australian getaway.</p>
+  <p class="text--xl">10 nights of opulent digs and chic retreats await, with Avis car hire allowing you to really adventure into the glorious landscapes you’ll encounter. </p>
+  <a href="#enter" class="btn btn--solid">Enter now</a>
+
+
+
+sections:
+
+  - title: Melbourne
+    content:
+    parts:
+
+      - supertitle: Stay in Melbourne
+        title: The Langham
+        id: langham
+        after: drive
+        content: You’ll start in Melbourne, having flown Premium Economy in comfort with Singapore Airlines from the UK. Two nights await at the Langham Melbourne, where five-star luxury complements the views from your Deluxe River room. Breakfast each morning at the hotel will start your Melbourne adventures the right way, before you leave the city behind in your hire car.
+
+      - supertitle: Lakeside retreat
+        title: Lake House, Daylesford
+        id: lake-house
+        after: flight
+        content: Head out of the buzzing metropolis to the idyll of the Lake House, Daylesford. A true paradise, this lakeside lodge offers respite from the vibrant Melbourne streets. Irresistibly chic interiors only add to the serenity of this stay, where trails lead off into the gorgeous countryside. Enjoy a three-course dinner in the multi-award winning Lake House Restaurant, where you can sample delectable regional wines from the lodge’s impressive cellar.
+
+  - title: Sydney
+    content:
+    parts:
+
+      - supertitle: Five-star Sydney
+        title: Shangri-La
+        id: shangri-la
+        after: drive
+        content: You’ll soon have to tear yourself away after your two-night stay at the Lake House and board your flight to Sydney. You’ll spend two nights at the Shangri-La, an opulent five-star retreat with astounding views over the city. Enjoy the personalised service and privileges of your Horizon Club room, where you’ll be treated to private lounges, drinks and canapes, plus much more.
+
+      - supertitle: Blue Mountains
+        title: Spicers Sangoma Retreat
+        id: spicers
+        after: drive
+        content: Discover the delights of Sydney, from world-leading galleries to the historic charms of The Rocks. Discover foodie treats, iconic sights and culture in abundance. Avis car hire will see you escaping the urban jungle and replacing it with another outdoor idyll – Spicers Sangoma Retreat, set within the beguiling Blue Mountains. Complete rejuvenation awaits at this eco-certified retreat beset with sauna, infinity pool and where sheer luxury and breathtaking surroundings abound.
+
+      - supertitle: Sydney metropolis
+        title: Hyatt Regency
+        id: hyatt
+        content: After a complete pampering, you’ll feel ready for one more urban adventure. Drive back to Sydney for your two final nights at the Hyatt Regency. You’ll stay in comfort in a Premium Harbour room, with great views to match. Soak up the unique energy of this diverse metropolis, before jetting off with Singapore Airlines once more…
+
 
 
 ---
 
 
-<div class="section">
-  <div class="row row--padding text--center">
-    {{page.intro}}
+
+<section>
+  <div class="row row--xxl bg--white vpad-bottom--xl competition-section">
+
+    <div class="row row--padding text--center competition-section__intro">
+      {{page.intro}}
+    </div>
+
+    {% for section in page.sections %}
+
+      <div class="row row--padding text--center vpad--xxl text--white bg--image" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/{{section.title|slugify}}.jpg);">
+        <h2 class="title title--xxl title--bolder title--upper title--kerning">{{section.title}}</h2>
+      </div>
+
+      {% for part in section.parts %}
+      <div class="row row--padding row--6-6-gutters row--valign competition-section__part">
+
+        <div class="col">
+          <span class="title title--xxxs title--bolder title--upper title--kerning title--super">{{part.supertitle}}</span>
+          <h4 class="title title--sm title--bold">{{part.title}}</h4>
+          <hr class="hr--left">
+          <p>{{part.content}}</p>
+        </div>
+
+        <div class="col">
+          <div class="bg-img bg-img--4-3" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/{{part.id}}.jpg);"></div>
+        </div>
+
+        {% if part.after %}
+        <div class="competition-section__after">{{part.after}}</div>
+        {% endif %}
+
+      </div>
+      {% endfor %}
+
+      <div class="row row--padding text--center">
+        <a href="#enter" class="btn btn--solid">Enter now</a>
+      </div>
+
+    {% endfor %}
+
   </div>
-</div>
+</section>
 
 
 
+<section class="section">
+  <div class="wp" id="enter"></div>
+  <div class="row row--xxl bg--white vpad--xl competition-section">
 
+    <div class="row row--padding text--center">
+      <h2 class="title title--lg title--bolder">Enter now...</h2>
+      <iframe src="https://promotion4390.strutta.me" width="100%" height="800"></iframe>
+    </div>
+
+  </div>
+</section>

@@ -70,7 +70,7 @@ $nav-width-bp: 500px;
     &:last-child { border-right: 1px solid $grey-lighter; }
     @include transition;
     &.is-current {
-      color: $theme-primary;
+      background-color: $white;
       &:hover { color: $white; }
     }
     &:hover {

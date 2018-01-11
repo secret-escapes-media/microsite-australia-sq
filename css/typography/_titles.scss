@@ -21,7 +21,7 @@
   &--color { color: $headline; }
 
   & + *         { padding-top: .75em; }
-  &--super + *  { padding-top: 15px !important; }
+  &--super + *  { padding-top: 0.25em !important; }
   &--sub        { padding-top: 15px !important; }
   &--light      { font-weight: 300; }
   &--bold       { font-weight: 500; }

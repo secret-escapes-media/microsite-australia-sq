@@ -23,8 +23,7 @@ var gameData = {
   "categories": [
       { "id": "city" },
       { "id": "nature" },
-      { "id": "relax" },
-      { "id": "remote" }
+      { "id": "relax" }
     ],
   "styles": {
     "city": [
@@ -38,10 +37,6 @@ var gameData = {
     "relax": [
         { "id": "relax-luxury" },
         { "id": "relax-food" }
-      ],
-    "remote": [
-        { "id": "remote-island" },
-        { "id": "remote-outback" }
       ]
     }
   };
@@ -98,9 +93,9 @@ function createCategoryList() {
       categoryCounter     = 0,
       imageCounter        = 1;
   // create 20 options using the game categories
-  for (var i = 1; i <= 16; i++) {
+  for (var i = 1; i <= 12; i++) {
     // adds a list item of game category to list
-    $('.'+categoryList).append('<div class="game__option js-game__category-option" data-category="' + gameData.categories[categoryCounter].id + '" style="background-image:url(../img/content/game/categories/'+gameData.categories[categoryCounter].id+'-'+imageCounter+'.jpg);"></div>');
+    $('.'+categoryList).append('<div class="game__option js-game__category-option" data-category="' + gameData.categories[categoryCounter].id + '" style="background-image:url(../img/content/game/categories/'+gameData.categories[categoryCounter].id+'/0'+imageCounter+'.jpg);"></div>');
     // loops through the amount of available categories if
     if (categoryCounter == categoriesAvailable) {
       // there are no more categories left, back to start
@@ -126,7 +121,7 @@ function createStyleList() {
   for (var i = 1; i <= 12; i++) {
     // adds a list item of game category to list
     // $('.'+styleList).append('<div class="game__option js-game__style-option" data-style="' + categoryStyle[stylesCounter].id + '" style="background-image:url(../img/content/game/styles/'+categoryStyle[stylesCounter].id+'-'+imageCounter+'.jpg);"></div>');
-    $('.'+styleList).append('<div class="game__option js-game__style-option" data-style="' + categoryStyle[stylesCounter].id + '" style="background-image:url(../img/content/game/styles/'+categoryStyle[stylesCounter].id+'.jpg);"></div>');
+    $('.'+styleList).append('<div class="game__option js-game__style-option" data-style="' + categoryStyle[stylesCounter].id + '" style="background-image:url(../img/content/game/styles/'+categoryStyle[stylesCounter].id+'/0'+imageCounter+'.jpg);"></div>');
 
     // loops through the amount of available categories if
     if (stylesCounter == stylesAvailable) {
