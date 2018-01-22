@@ -27,7 +27,7 @@ var gameData = {
     ],
   "styles": {
     "city": [
-        { "id": "city-hidden" },
+        { "id": "city-roadtrip" },
         { "id": "city-iconic" }
       ],
     "nature": [

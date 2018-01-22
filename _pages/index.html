@@ -55,11 +55,15 @@ landing:
           <div class="overview-map__locations">
 
             {% for location in locations.locations %}
-              <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__location" style="top: {{location.top}}%; left: {{location.left}}%;"></a>
+              <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__location" style="top: {{location.top}}%; left: {{location.left}}%;">
+                <img src="{{site.baseurl}}/img/icons/map-{{location.title|slugify}}.png" width="100%">
+              </a>
             {% endfor %}
 
             {% for location in locations.airports %}
-              <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__location overview-map__location--airport" style="top: {{location.top}}%; left: {{location.left}}%;"></a>
+              <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__airport" style="top: {{location.top}}%; left: {{location.left}}%;">
+                <img src="{{site.baseurl}}/img/icons/map-sq.png" class="js-svg-swap" width="100%">
+              </a>
             {% endfor %}
 
           </div>

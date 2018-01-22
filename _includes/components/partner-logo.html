@@ -1,3 +1,6 @@
-<a class="logo logo--partner{% if include.small %} logo--partner-sm{% endif %}" href="{{site.client.link}}" id="tracking-partner-logo"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/partner.png" alt="{{site.client.name}} Logo"></a>
 
-<a class="logo logo--partner logo--singaporeairlines" href="{{site.client.link}}" id="tracking-partner-logo"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/singaporeairlines.png" alt="Singapore Airlines Logo"></a>
+{% for client in site.clients %}
+
+  <a class="logo logo--partner logo--{{client.name|slugify}}{% if include.small %} logo--partner-sm{% endif %}" href="{{client.link}}" id="tracking-partner-logo"><img class="js-svg-swap" src="{{ site.baseurl }}/img/logo/{{client.name|slugify}}.png" alt="{{client.name}} Logo"></a>
+
+{% endfor %}

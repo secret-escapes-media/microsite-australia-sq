@@ -22,6 +22,7 @@ body, html { height: 100%; }
 }
 
 .page__content { overflow: hidden; }
+.hidden { display: none; }
 
 // waypoint object to give ID for page anchor linking
 .wp { position: absolute; top: 0; left: 0; visibility: hidden; }

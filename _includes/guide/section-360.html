@@ -1,5 +1,6 @@
 
 <div class="section vpad--xxxxl three-sixty" style="background-image: url({{site.baseurl}}/img/content/{{page.id}}/360/bg.jpg);">
+
   <div class="wp" id="section-{{section.title | slugify}}"></div>
 
 
@@ -10,9 +11,12 @@
       <h4 class="title title--super title--xxs title--upper title--kerning title--bold">{{section.supertitle}}</h4>
     {% endif %}
     <h3 class="title title--xl title--kerning title--display">{{section.title}}</h3>
-    <a href="{{ section.link }}" class="btn btn--lg btn--solid btn--white">Discover now</a>
+
+    <a href="javascript:void(0);" data-modal-id="modal-video" data-modal-item-id="video" data-video-id="{{section.video-id}}" class="js-open-modal btn btn--lg btn--solid btn--white">Discover now</a>
 
   </div>
 
 
 </div>
+
+{% include modal/modal-video.html %}

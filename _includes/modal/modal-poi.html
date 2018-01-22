@@ -35,11 +35,11 @@
 
             {% if poi.offer-id %}
               <hr>
-              <span class="title title--xxxs title--upper title--kerning">Included in the following holiday package:</span>
+              <span class="title title--xxxs">{% if poi.offer-title %}{{poi.offer-title}}{% else %}Included in the following holiday package:{% endif %}</span>
               <div class="vpad-top--sm">
                 {% assign offer = site.data.offers | where: "id", poi.offer-id %}
                 {% for offer in offer %}
-                  {% include components/offer-single.html type='direct' %}
+                  {% include components/offer-single.html type='direct' link='trip-planner' %}
                 {% endfor %}
               </div>
             {% endif %}

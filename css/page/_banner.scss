@@ -38,6 +38,41 @@ $core-nav-height-sm:  $s8;
     background-color: rgba($white,0.8);
   }
 
+  &__logos {
+    position: relative;
+    display: block;
+    margin: auto;
+    margin-bottom: 2em;
+    width: 100%;
+  }
+  &__logo {
+    display: inline-block;
+    margin: auto;
+    width: 60%;
+    max-width: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    & + & { margin-left: $s2;}
+    &:before {
+      display: block;
+      content: "";
+      width: 100%;
+    }
+    &--trailfinders {
+      max-width: 260px;
+      background-image: url('../img/logo/trailfinders.png');
+      .svg & { background-image: url('../img/logo/trailfinders.svg'); }
+      &:before { padding-top: 14%; }
+    }
+    &--singapore-airlines {
+      max-width: 200px;
+      background-image: url('../img/logo/singapore-airlines.png');
+      .svg & { background-image: url('../img/logo/singapore-airlines.svg'); }
+      &:before { padding-top: 36%; }
+    }
+  }
+
 }
 
 

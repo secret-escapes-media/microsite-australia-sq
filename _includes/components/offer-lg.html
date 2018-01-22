@@ -3,7 +3,8 @@
   <a class="offer__link" href="{{ offer.link }}"><span class="btn btn--tf">View Offer</span></a>
 
   <div class="bg-img bg-img--16-9" style="background-image: url('{{ site.baseurl }}/img/offers/{{offer.id}}.jpg')">
-    <div class="offer__price">From <span class="text--bolder">{{offer.price}}</span></div>
+    <div class="offer__logo"><img src="{{site.baseurl}}/img/logo/trailfinders.png" width="100%" class="js-svg-swap"></div>
+    <div class="offer__price">From <span class="text--bolder">£{{offer.price}}</span></div>
   </div>
 
   <div class="offer__content">

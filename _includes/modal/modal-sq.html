@@ -1,0 +1,30 @@
+
+<div class="js-modal modal is-closed" id="modal-sq">
+  <div class="modal__ui-wrap row">
+    <div class="js-close-modal modal__close"></div>
+    <div class="js-modal-nav modal__nav modal__nav--next" data-nav-direction="next"></div>
+    <div class="js-modal-nav modal__nav modal__nav--previous" data-nav-direction="previous"></div>
+    <div class="modal__content-wrap row">
+
+      {% for item in page.features %}
+        {% unless feature.favourite %}
+
+        <div class="modal__content modal__content--{{item.id}}"  data-content-category="{{section.title|slugify}}">
+
+          <div class="bg-img bg-img--16-9" style="background-image:url('{{site.baseurl}}/img/content/{{page.id}}/feature-{{item.id}}.jpg');"></div>
+
+          <div class="modal__content--padding vpad--xs text--center">
+
+            <h2 class="title title--sm title--bold">{{item.title}}</h2>
+
+            <p>{{item.content}}</p>
+
+          </div>
+        </div>
+
+        {% endunless %}
+      {% endfor %}
+
+    </div>
+  </div>
+</div>

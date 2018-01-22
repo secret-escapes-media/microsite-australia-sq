@@ -12,10 +12,11 @@
   included:
     - item: "Return international flights with Singapore Airlines"
     - item: "All domestic flights"
-    - item: "2 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
-    - item: "14 nights 4*+ to 5* accommodation including 6 breakfasts, 2 lunches & 4 dinners"
+    - item: "2 days Compact Inclusive Plus car hire"
+    - item: "14 nights 4*+ to 5* accommodation including 3 nights at the Hyatt Regency Sydney & 3 nights at The Langham, Melbourne"
+    - item: "6 breakfasts, 2 lunches & 4 dinners"
     - item: "Day tours: Sydney City Tour, Rottnest Island Adventure"
-  price: XXX
+  price: 5499
   link: https://www.trailfinders.com/tours/australia/new-south-wales/sydney/tour-unique-boutique-and-luxury-australia
 
 
@@ -23,15 +24,16 @@
 - title: Luxury Queensland
   id: luxury-queensland
   type: Multi Centre Holiday
-  duration: 14
+  duration: 15
   description: Stay in luxurious, unique hotels as you explore this diverse state. Enjoy cosmopolitan Brisbane, scenic valleys, inland tropical rainforest and the unforgettable Great Barrier Reef.
   included:
     - item: "Return international flights with Singapore Airlines"
     - item: "All domestic flights"
-    - item: "2 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
-    - item: "13 nights 5* accommodation including 11 breakfasts, 4 lunches & 5 dinners"
+    - item: "2 days Compact Inclusive Plus car hire"
+    - item: "14 nights 5* accommodation"
+    - item: "11 breakfasts, 5 lunches & 5 dinners"
     - item: "Resort activities at Spicers Peak Lodge, Silky Oaks Lodge & Lizard Island Resort"
-  price: XXX
+  price: 5749
   link: https://www.trailfinders.com/tours/australia/queensland/brisbane-and-the-gold-coast/tour-luxury-queensland
 
 
@@ -44,9 +46,9 @@
   included:
     - item: "Return international flights with Singapore Airlines"
     - item: "All domestic flights"
-    - item: "11 nights 3* to 3*+ accommodation"
+    - item: "11 nights 3*+ accommodation"
     - item: "Day tours: Sydney City Tour, Uluru Base & Sunset Tour, Kings Canyon National Park from Uluru, Quicksilver Outer Barrier Reef Cruise"
-  price:
+  price: 2199
   link: https://www.trailfinders.com/tours/australia/new-south-wales/sydney/tour-sydney-rock-and-reef
 
 
@@ -58,11 +60,11 @@
   description: From the tropics to the desert, combine the romance of an overnight journey aboard The Ghan with a fly drive holiday exploring the vast wilderness of the Red Centre.
   included:
     - item: "Return international flights with Singapore Airlines"
-    - item: "5 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
-    - item: "7 nights 4* accommodation "
+    - item: "5 days Economy Inclusive Plus car hire"
+    - item: "8 nights 4* accommodation"
     - item: "1 night on board The Ghan in a Gold Service Cabin including 1 breakfast, 1 lunch & 1 dinner and off train excursion at Katherine"
-    - item: "Day tours: Darwin Sunset Cruise, Litchfield National Park day tour, Uluru Morning Guided base walk"
-  price:
+    - item: "Day tours: Litchfield National Park day tour, Uluru Morning Guided base walk"
+  price: 2599
   link: https://www.trailfinders.com/tours/australia/northern-territory/tour-top-end-by-rail-and-outback-wilderness
 
 
@@ -75,9 +77,10 @@
   included:
     - item: "Return international flights with Singapore Airlines"
     - item: "Return airport transfers in Australia"
-    - item: "9 nights 3* to  3*+ accommodation including 9 breakfasts, 1 lunch & 7 dinners"
+    - item: "9 nights 3* to  3*+ accommodation "
+    - item: "9 breakfasts, 1 lunch & 7 dinners"
     - item: "Sightseeing & excursions "
-  price:
+  price: 3349
   link: https://www.trailfinders.com/tours/australia/western-australia/tour-south-western-escape
 
 
@@ -89,9 +92,9 @@
   description: Your motorhome will offer apartment style living on the road as you journey from Sydney along the east coast of Australia, stopping at glorious beaches, charming Byron Bay and Queensland’s Gold Coast.
   included:
     - item: "Return international flights with Singapore Airlines"
-    - item: "11 days motorhome, including an Inclusive Pack with a zero insurance excess"
+    - item: "11 days maui Ultima motorhome, including an Inclusive Pack with a zero insurance excess"
     - item: "3 nights 3*+ accommodation in Sydney before you collect the motorhome"
-  price:
+  price: 1449
   link: https://www.trailfinders.com/tours/australia/new-south-wales/sydney/tour-pacific-coastal-run-motorhome-holiday
 
 
@@ -104,11 +107,13 @@
   included:
     - item: "Return international flights with Singapore Airlines"
     - item: "All domestic flights"
-    - item: "14 nights 5* to 5*+ accommodation including 11 breakfasts, 6 lunches & 6 dinners"
-    - item: "Resort activities at Southern Ocean Lodge, Emirates One&Only Wolgan Valley & Longitude 131°"
+    - item: "2 days Economy Inclusive Plus car hire"
+    - item: "14 nights 5* to 5*+ accommodation including 2 nights at Spicers Sangoma Retreat, Blue Mountains  & 2 nights at the Shangri-La Hotel, Sydney"
+    - item: "9 breakfasts, 6 lunches & 6 dinners"
+    - item: "Resort activities at Southern Ocean Lodge & Longitude 131°"
     - item: "Day tours: Sydney Harbour Dinner Cruise, Whitehaven Beach & Hill Inlet Lookout"
     - item: "All transfers"
-  price:
+  price: 7899
   link: https://secure.trailfinders.com/tours/australia/new-south-wales/blue-mountains/tour-absolute-luxury-australia
 
 
@@ -120,10 +125,11 @@
   description: A journey of contrasts, from the sophisticated city of Melbourne to the stunning coastal scenery of the Great Ocean Road and the rugged mountains of the Grampians National Park.
   included:
     - item: "Return international flights with Singapore Airlines"
-    - item: "9 days Compact Inclusive Plus car hire including zero insurance excess, unlimited mileage, 24 Roadside Assistance & additional drivers"
-    - item: "11 nights 3* to 4* accommodation including 6 breakfasts "
+    - item: "9 days Compact Inclusive Plus car hire"
+    - item: "11 nights 3*+ to 5* accommodation including 1 night at the Lake House, Daylesford"
+    - item: "6 breakfasts "
     - item: "Day tours: 12 Apostles Helicopter Flight, Melbourne’s Lanes & Arcades Walking Tour"
-  price:
+  price: 1999
   link: https://www.trailfinders.com/tours/australia/victoria/tour-great-southern-touring-route
 
 

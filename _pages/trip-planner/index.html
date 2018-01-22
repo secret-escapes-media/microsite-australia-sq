@@ -6,6 +6,15 @@ nav-order: 7
 
 
 
+banner:
+  content: >
+    <div class="banner__logos">
+      <span class="banner__logo banner__logo--trailfinders"></span>
+    </div>
+    <h1 class="title title--display title--display-size title--upper title--kerning">Trip Planner</h1>
+
+
+
 intro: >
   <p class="text--xl">It’s time to plan your Australian adventure! Find your perfect match with our game, or scroll down to browse through Trailfinders offers set to inspire your Aussie wanderlust...</p>
 
@@ -13,10 +22,10 @@ intro: >
 
 game-results:
 
-  - id: city-hidden
-    title: Small hidden gems
-    content: You prefer the relaxed streets of the small town, where hidden gems abound and residents greet you with a warm smile. Discover local crafts, delicacies and more, in small-town Australia.
-    offer-id: unique-boutique-luxury-australia
+  - id: city-roadtrip
+    title: Road Trip
+    content: You prefer exploring the less-travelled roads under your own steam, where small towns offer hidden gems aplenty and residents greet you with a warm smile. Discover local crafts, delicacies and more, as you self-drive through Australia.
+    offer-id: pacific-coastal-run
 
   - id: city-iconic
     title: Iconic cities
@@ -26,22 +35,22 @@ game-results:
   - id: nature-wildlife
     title: Unique wildlife
     content: You are at your happiest exploring the unique wildlife of the places you visit. Immerse yourself in the landscape and discover unique animals at every turn.
-    offer-id: unique-boutique-luxury-australia
+    offer-id: luxury-queensland
 
   - id: nature-beaches
     title: Stunning Australian coast
     content: Your ideal escape always involves a beach. Sunning yourself on the beach, running down the beach, generally just beach beach beach. Well lucky then, that Australia has some of the most stunning beaches anywhere in the world.
-    offer-id: unique-boutique-luxury-australia
+    offer-id: sydney-rock-reef
 
   - id: relax-luxury
     title: Life of luxury
     content: From spas to opulent retreats, you crave the finer things. Relish in the luxurious comforts of Australia’s finest five-star hideaways.
-    offer-id: unique-boutique-luxury-australia
+    offer-id: absolute-luxury-australia
 
   - id: relax-food
     title: Foodie
     content: You’re a foodie through and through – you want authentic, innovative, tantalising flavours at every turn. Discover everything from brunch to cellar-door experiences to throw your tastebuds into a fervour.
-    offer-id: unique-boutique-luxury-australia
+    offer-id: south-western-escape
 
 
 ---
@@ -75,20 +84,22 @@ game-results:
 <div class="section bg--grey-lightest">
 
   <div class="row row--padding text--center">
-    <h3 class="title title--md title--upper title--kerning">Australia holiday packages</h3>
+    <h3 class="title title--md title--upper title--kerning">Trailfinder Holiday Packages</h3>
     <hr class="hr--center">
-    <p class="text--lg">Nullam id dolor id nibh ultricies vehicula ut id elit. Donec sed odio dui. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+    <p class="text--lg">Trailfinders are the No. 1 Tour Operator Down Under. Book your perfect Australian escape with award-winning Trailfinders, flying with Singapore Airlines from the UK</p>
   </div>
 
-  <div class="row row--padding">
+  <div class="row row--padding row--xl">
     {% assign offers = site.data.offers %}
 
-    <div class="row">
-      {% for offer in offers %}
-        {% include components/offer.html type='direct' %}
-      {% endfor %}
-    </div>
+    {% for offer in offers %}
+      {% include components/offer-lg.html type='direct' %}
+    {% endfor %}
 
+  </div>
+
+  <div class="row row--padding text--center">
+    <p class="text--sm">Prices are per person, based on twin share and subject to availability. Valid for selected May – June, September & November departures. </p>
   </div>
 
 </div>

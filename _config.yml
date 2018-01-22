@@ -1,8 +1,12 @@
 # Site settings
 title: Choose Australia
-client:
-  name: Tourism Australia
-  link:
+
+clients:
+  - name: Tourism Australia
+    link: http://www.australia.com/en
+  - name: Singapore Airlines
+    link: http://www.singaporeair.com/en_UK/gb/plan-travel/local-promotions/australia?utm_source=secretescapes&utm_campaign=tourism_australia_2018
+
 description:
 
 baseurl: "/australia" # the subpath of your site, e.g. /blog/
