@@ -1,0 +1,9 @@
+{% if page.trackingpixels %}
+  <div id="pixels" class="hidden">
+    {% for pixel in page.trackingpixels %}
+    <div id="{{pixel.id}}">
+      {{pixel.img}}
+    </div>
+    {% endfor %}
+  </div>
+{% endif %}

@@ -29,4 +29,35 @@
     ta_analyticsImg.src = ta_analyticsImgSrc
   </script>
 
+  <!-- AMOBEE Pixel -->
+  <img border="0" src="https://r.turn.com/r/beacon?b2=MgtnL-vzXpfdX5DmwFclOVx8K4iBXlR4hQ1Wvj587orqMOYeFSrOezf-Fb6uvl90TmOfraHSJvMesE3jjYiw8Q&cid=">
+
+  <!-- The Trade Desk Pixel -->
+  <img height="1" width="1" style="border-style:none;" alt="" src="//insight.adsrvr.org/track/conv/?adv=zolekvh&ct=0:uhpbnbv&fmt=3"/>
+
+
+  {% if page.trackingpixels %}
+  <script type="text/javascript">
+    $(document).ready(function(){
+      var ord = Number(ord) || Math.floor(Math.random()*10e12);
+      function generateImg(pixelid,scr_link){
+
+        var target = $('#'+pixelid);
+
+        var scr = document.createElement('script');
+        var scr_src = scr_link + ord + ";dc_lat=;dc_rdid=;tag_for_child_directed_treatment=?";
+        scr.src = scr_src;
+
+        $(target).prepend(scr);
+
+      };
+
+      {% for pixel in page.trackingpixels %}
+      generateImg('{{pixel.id}}','{{pixel.scr-link|strip_newlines}}');
+      {% endfor %}
+
+    });
+  </script>
+  {% endif %}
+
 </div>

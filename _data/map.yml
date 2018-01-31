@@ -64,7 +64,7 @@ airports:
     weather-id: Cairns, Australia
     top: 27
     left: 70
-    content:
+    content: If you want to enjoy the wonders of the Great Barrier Reef, Cairns is the perfect place to pitch up in preparation. It's short proximity to the reef, surrounded by national parks, plus a thriving bar and restaurant culture makes Cairns a great bolthole for further exploration.
 
 
 
@@ -80,7 +80,7 @@ locations:
   - title: Kangaroo Island
     link: coastal
     top: 83
-    left: 61
+    left: 55
     content: Lying off the southern coast of mainland Australia, a 35-minute flight from Adelaide, Kangaroo Island is known to house some of the most beautiful beaches in the southern hemisphere. While Vivonne Bay remains one of the island’s most pristine shores, Flinders Chase provides iconic rock formations and seemingly endless ocean views.
 
   - title: Great Barrier Reef
@@ -145,8 +145,8 @@ locations:
 
   - title: Great Ocean Road
     link: explorer
-    top: 64
-    left: 40
+    top: 89
+    left: 64
     content: Discover the Great Ocean Road, one of the world’s most scenic coastal drives. From iconic sights like the 12 Apostles to world-leading surf, rainforests and a host of fascinating wildlife, fill your itinerary with this famed road trip.
 
 

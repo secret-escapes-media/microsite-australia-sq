@@ -10,11 +10,9 @@ landing:
   title-super: Choose
   title: Australia
   intro: >
-    <p class="text--xl">A country of explosive colour and unparalleled possibilities, Australia has something fresh to offer worldly city-breakers, beach-bums and adventure-junkies.</p>
+    <p class="text--xl">A country of explosive colour and unparalleled possibilities, Australia has something fresh to offer worldly city-breakers, beach-lovers and adventure-junkies.</p>
     <p class="text--lg">As one of the most diverse destinations on earth, travellers have long been seduced by the irresistible lure of Australia’s golden sands, unrivalled surf and flaming outback landscape. From its bustling modern metropolises, with world-renowned culinary offerings, to the rolling hills of its wineries, this beautiful country is a destination for relaxation, adventure and discovery.</p>
-    <p class="text--lg">A two-week holiday in Australia is only the beginning. Now celebrating 50 years serving this fascinating country, Singapore Airlines offer flights to nine major cities across Australia. Let the world’s most awarded Airline take you there.</p>
-
-
+    <p class="text--lg">A two-week holiday in Australia is only the beginning. Now celebrating 50 years serving this fascinating country, Singapore Airlines offer flights to nine major cities across Australia. Let the world’s most awarded airline take you there.</p>
 
 ---
 {% assign locations = site.data.map %}
@@ -56,13 +54,13 @@ landing:
 
             {% for location in locations.locations %}
               <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__location" style="top: {{location.top}}%; left: {{location.left}}%;">
-                <img src="{{site.baseurl}}/img/icons/map-{{location.title|slugify}}.png" width="100%">
+                <img src="{{site.baseurl}}/img/content/{{page.id}}/icons/map-{{location.title|slugify}}.png" width="100%">
               </a>
             {% endfor %}
 
             {% for location in locations.airports %}
               <a href="javascript:void(0);" data-modal-id="modal-map" data-modal-item-id="{{location.title|slugify}}" class="js-open-modal overview-map__airport" style="top: {{location.top}}%; left: {{location.left}}%;">
-                <img src="{{site.baseurl}}/img/icons/map-sq.png" class="js-svg-swap" width="100%">
+                <img src="{{site.baseurl}}/img/content/{{page.id}}/icons/map-sq.png" class="js-svg-swap" width="100%">
               </a>
             {% endfor %}
 
