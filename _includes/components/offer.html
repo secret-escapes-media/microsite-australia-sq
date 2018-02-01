@@ -1,6 +1,6 @@
 <div class="offer{% if include.type == 'direct' %} offer--direct{% endif %}">
 
-  <a class="offer__link"{% if include.ext-link %} target="_blank"{% endif %} href="{{ offer.link }}"><span class="btn btn--tf">View Offer</span></a>
+  <a id="tracking-trailfinders-{{offer.id}}" class="offer__link"{% if include.ext-link %} target="_blank"{% endif %} href="{{ offer.link }}"><span class="btn btn--tf">View Offer</span></a>
 
   <div class="bg-img bg-img--3-2" style="background-image: url('{{ site.baseurl }}/img/offers/{{offer.id}}.jpg')">
     <div class="offer__logo"><img src="{{site.baseurl}}/img/logo/trailfinders.png" width="100%" class="js-svg-swap"></div>

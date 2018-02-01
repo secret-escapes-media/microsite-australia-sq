@@ -1,6 +1,6 @@
 <div class="offer offer--single{% if include.type == 'direct' %} offer--direct{% endif %} {{include.class}}">
 
-  <a id="tracking-poi-offer-{{poi.title|slugify}}"{% if include.ext-link %} target="_blank"{% endif %} class="offer__link" href="{% if include.link %}{{site.baseurl}}/{{ include.link}}{% else %}{{ offer.link }}{% endif %}"><span class="btn btn--tf">View Offer</span></a>
+  <a id="tracking-{% if poi %}{{poi.title|slugify}}{% endif %}--trailfinders-{{offer.id}}"{% if include.ext-link %} target="_blank"{% endif %} class="offer__link" href="{% if include.link %}{{site.baseurl}}/{{ include.link}}{% else %}{{ offer.link }}{% endif %}"><span class="btn btn--tf">View Offer</span></a>
 
   <div class="row row--6-6 row--valign">
 

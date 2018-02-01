@@ -9,7 +9,7 @@ airports:
     weather-id: Brisbane, Australia
     top: 52
     left: 81.5
-    content: Sheltered by islands and featuring an extending skyline, the capital of Queensland tends to attract adrenaline junkies and outdoor explorers, seeking both city refuge and coastal exploration. Kayak along the winding Brisbane River with Riverlife with the city’s skyscrapers behind you.
+    content: Sheltered by islands and featuring an extending skyline, the capital of Queensland tends to attract adrenaline junkies and outdoor explorers, seeking both urban and coastal exploration. Kayak along the winding Brisbane River with Riverlife, shadowed by the city’s skyscrapers in the distance.
 
   - title: Gold Coast
     link: cities
@@ -37,7 +37,7 @@ airports:
     weather-id: Melbourne, Australia
     top: 84
     left: 68
-    content: Often considered Australia’s finest cityscape, Melbourne is a metropolis where wild coast and urban architecture meet. A city of labyrinths, Melbourne’s network of passageways, filled with artisan coffee shops and trendy cocktail bars, are the perfect place to lose yourself.
+    content: Often considered Australia’s finest cityscape, Melbourne is a metropolis where wild coast and urban architecture meet. A bustling city, Melbourne’s network of passageways, filled with artisan coffee shops and trendy cocktail bars, are the perfect place to lose yourself.
 
   - title: Adelaide
     link: cities
@@ -58,7 +58,7 @@ airports:
     weather-id: Darwin, Australia
     top: 12.5
     left: 45.5
-    content: With a unique combination of modern city amenities and natural wilderness, Darwin is one of Australia’s most versatile landscapes. The capital of the Northern Territory is a coastal town surrounded by huge national parks and small, remote islands.
+    content: With a unique combination of modern city chic and natural wilderness, Darwin is one of Australia’s most versatile landscapes. Discover foodie treats at the Fish Market, or witness wild crocodiles just outside the centre of town in the national parks that surround it.
 
   - title: Cairns
     weather-id: Cairns, Australia
@@ -75,13 +75,13 @@ locations:
     link:
     top: 47
     left: 46
-    content: One of Australia’s most emblematic and beguiling symbols, Uluru stands high, piercing the flat plain. First-time visitors gasp at their first glimpse of the rock, a site of spiritual importance for the local Pitjantjatjara tribe. It’s deep red shifts colour depending on the time of day, turning blue in the rare chance of rain.
+    content: World Heritage-listed Uluru is one of Australia’s most iconic symbols. Located in the heart of Uluru-Kata Tjuta National Park in Australia’s Red Centre, Uluru is an ancient landscape, rich in Australian indigenous culture and spirituality. There are many ways to experience the majesty of Uluru - take a walk with an Aboriginal guide, see it from the skies by helicopter or hot air balloon or choose to ride across the ochre coloured desert on a Harley Davidson motorcycle or on the back of a camel.
 
   - title: Kangaroo Island
     link: coastal
     top: 83
     left: 55
-    content: Lying off the southern coast of mainland Australia, a 35-minute flight from Adelaide, Kangaroo Island is known to house some of the most beautiful beaches in the southern hemisphere. While Vivonne Bay remains one of the island’s most pristine shores, Flinders Chase provides iconic rock formations and seemingly endless ocean views.
+    content: Lying off the southern coast of mainland Australia, Kangaroo Island is known to house some of the most beautiful beaches in the southern hemisphere and is now mainly protected in state nature reserves. Its rural location makes it the perfect home for iconic Australian wildlife, including kangaroos, koalas and sea lions, the latter reachable with a private sunrise tour of Seal Bay...
 
   - title: Great Barrier Reef
     link: coastal
@@ -105,13 +105,13 @@ locations:
     link: foodie
     top: 66
     left: 62
-    content: One of Australia’s most famous and celebrated wine regions, alight for vineyard visits and cellar-door tastings. Wine trails snake through the beautiful countryside, with fine-dining options at every turn accompanied by a glass of the famed Shiraz.
+    content: One of Australia’s most famous and celebrated wine regions, alight here for vineyard visits and cellar-door tastings. Wine trails snake through the beautiful countryside, with fine-dining options at every turn accompanied by a glass of the famed Shiraz.
 
   - title: Margaret River
     link: coastal
     top: 76
     left: 22
-    content: Celebrated as an area of idyllic coastal splendour, with ancient cave ways and spectacular walking routes, Margaret River is one of Western Australia’s true hidden gems. This small town, in close proximity to Perth, is awash with regional wineries, impressive beaches and crowd-pleasing surf.
+    content: Celebrated as an area of idyllic coastal splendour, with ancient cave networks and spectacular walking routes, Margaret River is one of Western Australia’s true hidden gems. This small town, in close proximity to Perth, is awash with regional wineries, impressive beaches and crowd-pleasing surf.
 
   - title: Byron Bay
     link: coastal
@@ -135,13 +135,13 @@ locations:
     link: coastal
     top: 10
     left: 41
-    content: Though lesser-known than most of Australia’s coastal destinations, the scenic shoreline of the Northern Territory is one of the country’s most diverse. From the pristine beaches of its capital, Darwin, to the water-based adventures of Kakadu National Park, the Top End is an area of varied coastal terrain.
+    content: The remote, tropical shores of the Tiwi Islands offer some of the Northern Territory’s most fascinating sights. Comprising of Melville, Bathurst and nine uninhabited islands, Tiwi is known for its secluded beach stretches, excellent fishing opportunities and preserved Aboriginal culture.
 
   - title: Broome
     link: cities
     top: 26
     left: 32
-    content: The attractive beach town of Broome not only harbours incredible coastal scenery, but a rich geological history awaiting discovery. Situated in Kimberley, Western Australia, this quaint town features authentic dinosaur footprints, preserved in the rocks of Gantheaume Point.
+    content: The attractive beach town of Broome not only harbours incredible coastal scenery, but a rich geological history awaiting discovery. Stroll along the white sands of Cable Beach, or let a camel do the work at sunset. Discover dinosaur footprints and the magnificent Horizontal Falls all in and around this beautiful coastal town.
 
   - title: Great Ocean Road
     link: explorer

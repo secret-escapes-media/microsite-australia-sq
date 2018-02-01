@@ -2,12 +2,16 @@
 title: Choose Australia
 
 clients:
+
   - name: Tourism Australia
-    link: http://www.australia.com/en
+    link: https://www.australia.com/en-gb
+
   - name: Singapore Airlines
     link: http://www.singaporeair.com/en_UK/gb/plan-travel/local-promotions/australia?utm_source=secretescapes&utm_campaign=tourism_australia_2018
 
-description:
+
+
+description: A country of explosive colour and unparalleled possibilities, Australia has something fresh to offer worldly city-breakers, beach-lovers and adventure-junkies.
 
 baseurl: "/australia" # the subpath of your site, e.g. /blog/
 url: "http://mp.secretescapes.com" # the base hostname & protocol for your site

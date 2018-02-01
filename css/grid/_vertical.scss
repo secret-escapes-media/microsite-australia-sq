@@ -29,61 +29,97 @@
 // equal vertical padding for large elements
 // !!!!!!!!!! this could all be on the section, eg short section, massive section etc
 .vpad {
-  &--xxxxl { padding-top: $s14; padding-bottom: $s14; }
-  &--xxxl  { padding-top: $s12; padding-bottom: $s12; }
-  &--xxl   { padding-top: $s10; padding-bottom: $s10; }
-  &--xl    { padding-top: $s8; padding-bottom: $s8; }
+  &--xxxxl,
+  &--xxxl,
+  &--xxl,
+  &--xl,
   &--lg    { padding-top: $s6; padding-bottom: $s6; }
   &--md    { padding-top: $s4; padding-bottom: $s4; }
   &--sm    { padding-top: $s2; padding-bottom: $s2; }
   &--none  { padding-top: 0; padding-bottom: 0; }
   &-bottom {
-    &--xxxxl { padding-bottom: $s14; }
-    &--xxxl  { padding-bottom: $s12; }
-    &--xxl   { padding-bottom: $s10; }
-    &--xl    { padding-bottom: $s8; }
+    &--xxxxl,
+    &--xxxl,
+    &--xxl,
+    &--xl,
     &--lg    { padding-bottom: $s6; }
     &--md    { padding-bottom: $s4; }
     &--sm    { padding-bottom: $s2; }
     &--none  { padding-bottom: 0; }
   }
   &-top {
-    &--xxxxl { padding-top: $s14; }
-    &--xxxl  { padding-top: $s12; }
-    &--xxl   { padding-top: $s10; }
-    &--xl    { padding-top: $s8; }
+    &--xxxxl,
+    &--xxxl,
+    &--xxl,
+    &--xl,
     &--lg    { padding-top: $s6; }
     &--md    { padding-top: $s4; }
     &--sm    { padding-top: $s2; }
     &--none  { padding-top: 0; }
   }
+  @include bp(lg){
+    &--xxxxl { padding-top: $s14; padding-bottom: $s14; }
+    &--xxxl  { padding-top: $s12; padding-bottom: $s12; }
+    &--xxl   { padding-top: $s10; padding-bottom: $s10; }
+    &--xl    { padding-top: $s8; padding-bottom: $s8; }
+    &-bottom {
+      &--xxxxl { padding-bottom: $s14; }
+      &--xxxl  { padding-bottom: $s12; }
+      &--xxl   { padding-bottom: $s10; }
+      &--xl    { padding-bottom: $s8; }
+    }
+    &-top {
+      &--xxxxl { padding-top: $s14; }
+      &--xxxl  { padding-top: $s12; }
+      &--xxl   { padding-top: $s10; }
+      &--xl    { padding-top: $s8; }
+    }
+  }
 }
 
 .vmar {
-  &--xxxxl { margin-top: $s14; margin-bottom: $s14; }
-  &--xxxl  { margin-top: $s12; margin-bottom: $s12; }
-  &--xxl   { margin-top: $s10; margin-bottom: $s10; }
-  &--xl    { margin-top: $s8; margin-bottom: $s8; }
+  &--xxxxl,
+  &--xxxl,
+  &--xxl,
+  &--xl,
   &--lg    { margin-top: $s6; margin-bottom: $s6; }
   &--md    { margin-top: $s4; margin-bottom: $s4; }
   &--sm    { margin-top: $s2; margin-bottom: $s2; }
   &-bottom {
-    &--xxxxl { margin-bottom: $s14; }
-    &--xxxl  { margin-bottom: $s12; }
-    &--xxl   { margin-bottom: $s10; }
-    &--xl    { margin-bottom: $s8; }
+    &--xxxxl,
+    &--xxxl,
+    &--xxl,
+    &--xl,
     &--lg    { margin-bottom: $s6; }
     &--md    { margin-bottom: $s4; }
     &--sm    { margin-bottom: $s2; }
   }
   &-top {
-    &--xxxxl { margin-top: $s14; }
-    &--xxxl  { margin-top: $s12; }
-    &--xxl   { margin-top: $s10; }
-    &--xl    { margin-top: $s8; }
+    &--xxxxl,
+    &--xxxl,
+    &--xxl,
+    &--xl,
     &--lg    { margin-top: $s6; }
     &--md    { margin-top: $s4; }
     &--sm    { margin-top: $s2; }
+  }
+  @include bp(lg){
+    &--xxxxl { margin-top: $s14; margin-bottom: $s14; }
+    &--xxxl  { margin-top: $s12; margin-bottom: $s12; }
+    &--xxl   { margin-top: $s10; margin-bottom: $s10; }
+    &--xl    { margin-top: $s8; margin-bottom: $s8; }
+    &-bottom {
+      &--xxxxl { margin-bottom: $s14; }
+      &--xxxl  { margin-bottom: $s12; }
+      &--xxl   { margin-bottom: $s10; }
+      &--xl    { margin-bottom: $s8; }
+    }
+    &-top {
+      &--xxxxl { margin-top: $s14; }
+      &--xxxl  { margin-top: $s12; }
+      &--xxl   { margin-top: $s10; }
+      &--xl    { margin-top: $s8; }
+    }
   }
 }
 

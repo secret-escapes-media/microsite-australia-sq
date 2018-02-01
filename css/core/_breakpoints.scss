@@ -35,10 +35,10 @@ $sm:   330px;
 
 .hide {
   display: none;
-  @include max-bp(sm) { &--sm { display: none; } }
-  @include max-bp(md) { &--md { display: none; } }
-  @include max-bp(lg) { &--lg { display: none; } }
-  @include max-bp(xl) { &--xl { display: none; } }
-  @include max-bp(xxl) { &--xxl { display: none; } }
-  @include max-bp(xxxl) { &--xxxl { display: none; } }
+  @include max-bp(sm) { &--sm { display: none !important; } }
+  @include max-bp(md) { &--md { display: none !important; } }
+  @include max-bp(lg) { &--lg { display: none !important; } }
+  @include max-bp(xl) { &--xl { display: none !important; } }
+  @include max-bp(xxl) { &--xxl { display: none !important; } }
+  @include max-bp(xxxl) { &--xxxl { display: none !important; } }
 }

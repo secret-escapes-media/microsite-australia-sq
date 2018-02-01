@@ -2,7 +2,7 @@
 
 .text {
   &--xxl    { font-size: $s1; }
-  &--xl     { font-size: $s1; }
+  &--xl     { font-size: $s0; }
   &--lg     { font-size: $s0; }
   &--md     { font-size: $s0*1.1; }
   @include bp(lg){

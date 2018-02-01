@@ -21,6 +21,13 @@ $core-nav-height-sm:  $s8;
     text-shadow: 0 0 35px rgba($grey-darkest,0.6);
     .page--overview & { text-shadow: 0 0 35px rgba(76,92,117,0.6); }
   }
+  // custom title sizing
+  &__title {
+    font-size: $s4;
+    @include bp(md){ font-size: $s7; }
+    @include bp(lg){ font-size: $s9; }
+    @include bp(xxl){ font-size: $s11; }
+  }
   &__bg {
     position: absolute;
     top: 0;
@@ -48,7 +55,7 @@ $core-nav-height-sm:  $s8;
   &__logo {
     display: inline-block;
     margin: auto;
-    width: 60%;
+    width: 45%;
     max-width: 300px;
     background-position: center;
     background-repeat: no-repeat;
@@ -58,6 +65,9 @@ $core-nav-height-sm:  $s8;
       display: block;
       content: "";
       width: 100%;
+    }
+    @include bp(lg){
+      width: 60%;
     }
     &--trailfinders {
       max-width: 260px;
@@ -78,20 +88,23 @@ $core-nav-height-sm:  $s8;
 
 
 .layout--competition .banner {
-  height: 60%;
+  height: 85%;
+  @include bp(md){
+    height: 60%;
+  }
   &__bg {
     position: fixed;
   }
   &__nav {
     bottom: auto;
     top: $core-nav-height-sm;
-    @include bp(lg){
+    @include bp(md){
       top: $core-nav-height;
     }
   }
   &__content {
     padding-top: $core-nav-height-sm*2;
-    @include bp(lg){
+    @include bp(md){
       padding-top: $core-nav-height*2;
     }
   }

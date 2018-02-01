@@ -1,19 +1,23 @@
-<a href="javascript:void(0);" id="poi-{{poi.title|slugify}}" data-modal-id="modal-pois" data-modal-item-id="{{poi.title|slugify}}" class="js-open-modal poi{% if include.class %} {{include.class}}{% endif %}">
-  <div class="wp" id="poi-{{poi.title|slugify}}"></div>
+<div class="poi{% if include.class %} {{include.class}}{% endif %}">
 
-  <div class="poi__image bg-img bg-img--3-2 bg-img--shadow bg--grey-darkest text--white">
-    <div class="bg-img__content">
-      <h4 class="title title--xs title--kerning title--upper title--bold">{{poi.title}}</h4>
+  <a href="javascript:void(0);" id="poi-{{poi.title|slugify}}" data-modal-id="modal-pois" data-modal-item-id="{{poi.title|slugify}}" class="js-open-modal ">
+    <div class="wp" id="poi-{{poi.title|slugify}}"></div>
+
+    <div class="poi__image bg-img bg-img--3-2 bg-img--shadow bg--grey-darkest text--white">
+      <div class="bg-img__content">
+        <h4 class="title title--xs title--kerning title--upper title--bold">{{poi.title}}</h4>
+      </div>
+
+      {% if poi.image-credit %}
+      <div class="bg-img__credit">
+        {{poi.image-credit}}
+      </div>
+      {% endif %}
+
+      <div class="bg-img__bg" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/pois/{{poi.title|slugify}}.jpg');"></div>
+
     </div>
 
-    {% if poi.image-credit %}
-    <div class="bg-img__credit">
-      {{poi.image-credit}}
-    </div>
-    {% endif %}
+  </a>
 
-    <div class="bg-img__bg" style="background-image: url('{{site.baseurl}}/img/content/{{page.id}}/pois/{{poi.title|slugify}}.jpg');"></div>
-
-  </div>
-
-</a>
+</div>
